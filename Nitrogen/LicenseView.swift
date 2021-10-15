@@ -15,7 +15,7 @@ struct LicenseView: View{
     """
     This software is licensed under the BSD 3-Clause license. For your convinience, a copy is shown below.
     
-    Copyright 2021 Lilly Cham
+    Copyright (c) 2021, Lilly Cham
     
     Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
     

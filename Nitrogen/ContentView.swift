@@ -7,6 +7,8 @@
 
 import SwiftUI
 import Combine
+//import DeviceKit
+
 
 struct ContentView: View {
   var body: some View {
@@ -37,7 +39,6 @@ struct ContentView: View {
         
       }
       .navigationBarTitle(Text("Nitrogen"))
-      .navigationTitle("Home")
     }
   }
 }

@@ -7,12 +7,25 @@
 
 import Foundation
 import SwiftUI
+//import DeviceKit <- not working atm
 
 struct DeviceView: View{
   var body: some View {
-    ScrollView {
-      Text("About this Device")
+    NavigationView {
+      List {
+        Section {
+          Label("Device identifier: \(machineName())", systemImage: "iphone")
+          Label("System Name: \(sysName())", systemImage: "iphone")
+          Label("Version: \(deviceVersion())", systemImage: "iphone")
+        }
+        Section{
+          Label("Device identifier: \(machineName())", systemImage: "iphone")
+          Label("System Name: \(sysName())", systemImage: "iphone")
+          Label("Version: \(deviceVersion())", systemImage: "iphone")
+        }
+      }
     }
-    .navigationTitle("Device Information")
+    .navigationTitle("Device")
   }
 }
+

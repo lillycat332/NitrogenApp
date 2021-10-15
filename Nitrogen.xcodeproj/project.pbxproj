@@ -18,6 +18,8 @@
 		EB6DC7B327199CCF006B4A56 /* DeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DC7B227199CCF006B4A56 /* DeviceView.swift */; };
 		EB6DC7B527199CEA006B4A56 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DC7B427199CEA006B4A56 /* AboutView.swift */; };
 		EB6DC7B727199D07006B4A56 /* LicenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DC7B627199D07006B4A56 /* LicenseView.swift */; };
+		EB6DC7BA2719AF62006B4A56 /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = EB6DC7B92719AF62006B4A56 /* DeviceKit */; };
+		EB6DC7BC2719BD4F006B4A56 /* SpecGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DC7BB2719BD4F006B4A56 /* SpecGetter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,7 @@
 		EB6DC7B227199CCF006B4A56 /* DeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceView.swift; sourceTree = "<group>"; };
 		EB6DC7B427199CEA006B4A56 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		EB6DC7B627199D07006B4A56 /* LicenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseView.swift; sourceTree = "<group>"; };
+		EB6DC7BB2719BD4F006B4A56 /* SpecGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecGetter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB6DC7BA2719AF62006B4A56 /* DeviceKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +113,7 @@
 				EB6DC7AE27199C5B006B4A56 /* HelpView.swift */,
 				EB6DC7B427199CEA006B4A56 /* AboutView.swift */,
 				EB6DC7B627199D07006B4A56 /* LicenseView.swift */,
+				EB6DC7BB2719BD4F006B4A56 /* SpecGetter.swift */,
 				EB6DC78A271981DB006B4A56 /* Assets.xcassets */,
 				EB6DC78C271981DC006B4A56 /* Preview Content */,
 			);
@@ -155,6 +160,9 @@
 			dependencies = (
 			);
 			name = Nitrogen;
+			packageProductDependencies = (
+				EB6DC7B92719AF62006B4A56 /* DeviceKit */,
+			);
 			productName = "photos printed";
 			productReference = EB6DC783271981DA006B4A56 /* Nitrogen.app */;
 			productType = "com.apple.product-type.application";
@@ -227,6 +235,9 @@
 				Base,
 			);
 			mainGroup = EB6DC77A271981DA006B4A56;
+			packageReferences = (
+				EB6DC7B82719AF62006B4A56 /* XCRemoteSwiftPackageReference "DeviceKit" */,
+			);
 			productRefGroup = EB6DC784271981DA006B4A56 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -270,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB6DC7AF27199C5B006B4A56 /* HelpView.swift in Sources */,
+				EB6DC7BC2719BD4F006B4A56 /* SpecGetter.swift in Sources */,
 				EB6DC789271981DA006B4A56 /* ContentView.swift in Sources */,
 				EB6DC7B327199CCF006B4A56 /* DeviceView.swift in Sources */,
 				EB6DC7B727199D07006B4A56 /* LicenseView.swift in Sources */,
@@ -623,6 +635,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EB6DC7B82719AF62006B4A56 /* XCRemoteSwiftPackageReference "DeviceKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devicekit/DeviceKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EB6DC7B92719AF62006B4A56 /* DeviceKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB6DC7B82719AF62006B4A56 /* XCRemoteSwiftPackageReference "DeviceKit" */;
+			productName = DeviceKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EB6DC77B271981DA006B4A56 /* Project object */;
 }

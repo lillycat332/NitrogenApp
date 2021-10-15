@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+//import DeviceKit
 
 @main
-struct photos_printedApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+struct NitrogenApp: App {
+  var body: some Scene {
+    WindowGroup {
+      ContentView()
     }
+  }
 }
+
