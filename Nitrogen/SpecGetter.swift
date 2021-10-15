@@ -26,6 +26,7 @@ func sysName() -> String {
     return identifier + String(UnicodeScalar(UInt8(value)))
   }
 }
+
 func deviceVersion() -> String {
   var systemInfo = utsname()
   uname(&systemInfo)
@@ -35,6 +36,7 @@ func deviceVersion() -> String {
     return identifier + String(UnicodeScalar(UInt8(value)))
   }
 }
+
 func sysInfo() -> String {
   var systemInfo = utsname()
   uname(&systemInfo)

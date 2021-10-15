@@ -7,18 +7,12 @@
 
 import Foundation
 import SwiftUI
-//import DeviceKit <- not working atm
 
 struct DeviceView: View{
   var body: some View {
-    NavigationView {
+    VStack {
       List {
         Section {
-          Label("Device identifier: \(machineName())", systemImage: "iphone")
-          Label("System Name: \(sysName())", systemImage: "iphone")
-          Label("Version: \(deviceVersion())", systemImage: "iphone")
-        }
-        Section{
           Label("Device identifier: \(machineName())", systemImage: "iphone")
           Label("System Name: \(sysName())", systemImage: "iphone")
           Label("Version: \(deviceVersion())", systemImage: "iphone")

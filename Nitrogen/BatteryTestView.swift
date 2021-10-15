@@ -11,7 +11,7 @@ import UIKit
 
 struct BatteryTestView: View{
   var body: some View {
-    ScrollView {
+    VStack {
       Text("Battery")
     }
     .navigationTitle("Battery Information")
