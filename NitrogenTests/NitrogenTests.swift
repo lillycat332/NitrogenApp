@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import photos_printed
+@testable import Nitrogen
 
 class photos_printedTests: XCTestCase {
 

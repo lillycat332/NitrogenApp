@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EB6DC787271981DA006B4A56 /* photos_printedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DC786271981DA006B4A56 /* photos_printedApp.swift */; };
+		EB6DC787271981DA006B4A56 /* NitrogenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DC786271981DA006B4A56 /* NitrogenApp.swift */; };
 		EB6DC789271981DA006B4A56 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DC788271981DA006B4A56 /* ContentView.swift */; };
 		EB6DC78B271981DB006B4A56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB6DC78A271981DB006B4A56 /* Assets.xcassets */; };
 		EB6DC78E271981DC006B4A56 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB6DC78D271981DC006B4A56 /* Preview Assets.xcassets */; };
-		EB6DC798271981DC006B4A56 /* photos_printedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DC797271981DC006B4A56 /* photos_printedTests.swift */; };
-		EB6DC7A2271981DC006B4A56 /* photos_printedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DC7A1271981DC006B4A56 /* photos_printedUITests.swift */; };
+		EB6DC798271981DC006B4A56 /* NitrogenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DC797271981DC006B4A56 /* NitrogenTests.swift */; };
+		EB6DC7A2271981DC006B4A56 /* NitrogenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DC7A1271981DC006B4A56 /* NitrogenUITests.swift */; };
+		EB6DC7AF27199C5B006B4A56 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DC7AE27199C5B006B4A56 /* HelpView.swift */; };
+		EB6DC7B127199C9E006B4A56 /* BatteryTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DC7B027199C9E006B4A56 /* BatteryTestView.swift */; };
+		EB6DC7B327199CCF006B4A56 /* DeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DC7B227199CCF006B4A56 /* DeviceView.swift */; };
+		EB6DC7B527199CEA006B4A56 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DC7B427199CEA006B4A56 /* AboutView.swift */; };
+		EB6DC7B727199D07006B4A56 /* LicenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DC7B627199D07006B4A56 /* LicenseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,15 +38,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EB6DC783271981DA006B4A56 /* photos printed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "photos printed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB6DC786271981DA006B4A56 /* photos_printedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photos_printedApp.swift; sourceTree = "<group>"; };
+		EB6DC783271981DA006B4A56 /* Nitrogen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nitrogen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB6DC786271981DA006B4A56 /* NitrogenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NitrogenApp.swift; sourceTree = "<group>"; };
 		EB6DC788271981DA006B4A56 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EB6DC78A271981DB006B4A56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB6DC78D271981DC006B4A56 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		EB6DC793271981DC006B4A56 /* photos printedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "photos printedTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB6DC797271981DC006B4A56 /* photos_printedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photos_printedTests.swift; sourceTree = "<group>"; };
-		EB6DC79D271981DC006B4A56 /* photos printedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "photos printedUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB6DC7A1271981DC006B4A56 /* photos_printedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photos_printedUITests.swift; sourceTree = "<group>"; };
+		EB6DC793271981DC006B4A56 /* NitrogenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NitrogenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB6DC797271981DC006B4A56 /* NitrogenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NitrogenTests.swift; sourceTree = "<group>"; };
+		EB6DC79D271981DC006B4A56 /* NitrogenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NitrogenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB6DC7A1271981DC006B4A56 /* NitrogenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NitrogenUITests.swift; sourceTree = "<group>"; };
+		EB6DC7AE27199C5B006B4A56 /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
+		EB6DC7B027199C9E006B4A56 /* BatteryTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryTestView.swift; sourceTree = "<group>"; };
+		EB6DC7B227199CCF006B4A56 /* DeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceView.swift; sourceTree = "<group>"; };
+		EB6DC7B427199CEA006B4A56 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		EB6DC7B627199D07006B4A56 /* LicenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,9 +82,9 @@
 		EB6DC77A271981DA006B4A56 = {
 			isa = PBXGroup;
 			children = (
-				EB6DC785271981DA006B4A56 /* photos printed */,
-				EB6DC796271981DC006B4A56 /* photos printedTests */,
-				EB6DC7A0271981DC006B4A56 /* photos printedUITests */,
+				EB6DC785271981DA006B4A56 /* Nitrogen */,
+				EB6DC796271981DC006B4A56 /* NitrogenTests */,
+				EB6DC7A0271981DC006B4A56 /* NitrogenUITests */,
 				EB6DC784271981DA006B4A56 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,22 +92,27 @@
 		EB6DC784271981DA006B4A56 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EB6DC783271981DA006B4A56 /* photos printed.app */,
-				EB6DC793271981DC006B4A56 /* photos printedTests.xctest */,
-				EB6DC79D271981DC006B4A56 /* photos printedUITests.xctest */,
+				EB6DC783271981DA006B4A56 /* Nitrogen.app */,
+				EB6DC793271981DC006B4A56 /* NitrogenTests.xctest */,
+				EB6DC79D271981DC006B4A56 /* NitrogenUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EB6DC785271981DA006B4A56 /* photos printed */ = {
+		EB6DC785271981DA006B4A56 /* Nitrogen */ = {
 			isa = PBXGroup;
 			children = (
-				EB6DC786271981DA006B4A56 /* photos_printedApp.swift */,
+				EB6DC786271981DA006B4A56 /* NitrogenApp.swift */,
 				EB6DC788271981DA006B4A56 /* ContentView.swift */,
+				EB6DC7B227199CCF006B4A56 /* DeviceView.swift */,
+				EB6DC7B027199C9E006B4A56 /* BatteryTestView.swift */,
+				EB6DC7AE27199C5B006B4A56 /* HelpView.swift */,
+				EB6DC7B427199CEA006B4A56 /* AboutView.swift */,
+				EB6DC7B627199D07006B4A56 /* LicenseView.swift */,
 				EB6DC78A271981DB006B4A56 /* Assets.xcassets */,
 				EB6DC78C271981DC006B4A56 /* Preview Content */,
 			);
-			path = "photos printed";
+			path = Nitrogen;
 			sourceTree = "<group>";
 		};
 		EB6DC78C271981DC006B4A56 /* Preview Content */ = {
@@ -108,28 +123,28 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		EB6DC796271981DC006B4A56 /* photos printedTests */ = {
+		EB6DC796271981DC006B4A56 /* NitrogenTests */ = {
 			isa = PBXGroup;
 			children = (
-				EB6DC797271981DC006B4A56 /* photos_printedTests.swift */,
+				EB6DC797271981DC006B4A56 /* NitrogenTests.swift */,
 			);
-			path = "photos printedTests";
+			path = NitrogenTests;
 			sourceTree = "<group>";
 		};
-		EB6DC7A0271981DC006B4A56 /* photos printedUITests */ = {
+		EB6DC7A0271981DC006B4A56 /* NitrogenUITests */ = {
 			isa = PBXGroup;
 			children = (
-				EB6DC7A1271981DC006B4A56 /* photos_printedUITests.swift */,
+				EB6DC7A1271981DC006B4A56 /* NitrogenUITests.swift */,
 			);
-			path = "photos printedUITests";
+			path = NitrogenUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EB6DC782271981DA006B4A56 /* photos printed */ = {
+		EB6DC782271981DA006B4A56 /* Nitrogen */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB6DC7A5271981DC006B4A56 /* Build configuration list for PBXNativeTarget "photos printed" */;
+			buildConfigurationList = EB6DC7A5271981DC006B4A56 /* Build configuration list for PBXNativeTarget "Nitrogen" */;
 			buildPhases = (
 				EB6DC77F271981DA006B4A56 /* Sources */,
 				EB6DC780271981DA006B4A56 /* Frameworks */,
@@ -139,14 +154,14 @@
 			);
 			dependencies = (
 			);
-			name = "photos printed";
+			name = Nitrogen;
 			productName = "photos printed";
-			productReference = EB6DC783271981DA006B4A56 /* photos printed.app */;
+			productReference = EB6DC783271981DA006B4A56 /* Nitrogen.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EB6DC792271981DC006B4A56 /* photos printedTests */ = {
+		EB6DC792271981DC006B4A56 /* NitrogenTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB6DC7A8271981DC006B4A56 /* Build configuration list for PBXNativeTarget "photos printedTests" */;
+			buildConfigurationList = EB6DC7A8271981DC006B4A56 /* Build configuration list for PBXNativeTarget "NitrogenTests" */;
 			buildPhases = (
 				EB6DC78F271981DC006B4A56 /* Sources */,
 				EB6DC790271981DC006B4A56 /* Frameworks */,
@@ -157,14 +172,14 @@
 			dependencies = (
 				EB6DC795271981DC006B4A56 /* PBXTargetDependency */,
 			);
-			name = "photos printedTests";
+			name = NitrogenTests;
 			productName = "photos printedTests";
-			productReference = EB6DC793271981DC006B4A56 /* photos printedTests.xctest */;
+			productReference = EB6DC793271981DC006B4A56 /* NitrogenTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		EB6DC79C271981DC006B4A56 /* photos printedUITests */ = {
+		EB6DC79C271981DC006B4A56 /* NitrogenUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB6DC7AB271981DC006B4A56 /* Build configuration list for PBXNativeTarget "photos printedUITests" */;
+			buildConfigurationList = EB6DC7AB271981DC006B4A56 /* Build configuration list for PBXNativeTarget "NitrogenUITests" */;
 			buildPhases = (
 				EB6DC799271981DC006B4A56 /* Sources */,
 				EB6DC79A271981DC006B4A56 /* Frameworks */,
@@ -175,9 +190,9 @@
 			dependencies = (
 				EB6DC79F271981DC006B4A56 /* PBXTargetDependency */,
 			);
-			name = "photos printedUITests";
+			name = NitrogenUITests;
 			productName = "photos printedUITests";
-			productReference = EB6DC79D271981DC006B4A56 /* photos printedUITests.xctest */;
+			productReference = EB6DC79D271981DC006B4A56 /* NitrogenUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -203,7 +218,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EB6DC77E271981DA006B4A56 /* Build configuration list for PBXProject "photos printed" */;
+			buildConfigurationList = EB6DC77E271981DA006B4A56 /* Build configuration list for PBXProject "Nitrogen" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -216,9 +231,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EB6DC782271981DA006B4A56 /* photos printed */,
-				EB6DC792271981DC006B4A56 /* photos printedTests */,
-				EB6DC79C271981DC006B4A56 /* photos printedUITests */,
+				EB6DC782271981DA006B4A56 /* Nitrogen */,
+				EB6DC792271981DC006B4A56 /* NitrogenTests */,
+				EB6DC79C271981DC006B4A56 /* NitrogenUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -254,8 +269,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB6DC7AF27199C5B006B4A56 /* HelpView.swift in Sources */,
 				EB6DC789271981DA006B4A56 /* ContentView.swift in Sources */,
-				EB6DC787271981DA006B4A56 /* photos_printedApp.swift in Sources */,
+				EB6DC7B327199CCF006B4A56 /* DeviceView.swift in Sources */,
+				EB6DC7B727199D07006B4A56 /* LicenseView.swift in Sources */,
+				EB6DC7B127199C9E006B4A56 /* BatteryTestView.swift in Sources */,
+				EB6DC7B527199CEA006B4A56 /* AboutView.swift in Sources */,
+				EB6DC787271981DA006B4A56 /* NitrogenApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB6DC798271981DC006B4A56 /* photos_printedTests.swift in Sources */,
+				EB6DC798271981DC006B4A56 /* NitrogenTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB6DC7A2271981DC006B4A56 /* photos_printedUITests.swift in Sources */,
+				EB6DC7A2271981DC006B4A56 /* NitrogenUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,12 +300,12 @@
 /* Begin PBXTargetDependency section */
 		EB6DC795271981DC006B4A56 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EB6DC782271981DA006B4A56 /* photos printed */;
+			target = EB6DC782271981DA006B4A56 /* Nitrogen */;
 			targetProxy = EB6DC794271981DC006B4A56 /* PBXContainerItemProxy */;
 		};
 		EB6DC79F271981DC006B4A56 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EB6DC782271981DA006B4A56 /* photos printed */;
+			target = EB6DC782271981DA006B4A56 /* Nitrogen */;
 			targetProxy = EB6DC79E271981DC006B4A56 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -414,7 +434,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"photos printed/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Nitrogen/Preview Content\"";
 				DEVELOPMENT_TEAM = UN964XDAH7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -429,8 +449,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "xyz.7df.photos-printed";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.7df.Nitrogen;
+				PRODUCT_NAME = Nitrogen;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -444,7 +464,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"photos printed/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Nitrogen/Preview Content\"";
 				DEVELOPMENT_TEAM = UN964XDAH7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -459,8 +479,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "xyz.7df.photos-printed";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.7df.Nitrogen;
+				PRODUCT_NAME = Nitrogen;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -488,7 +508,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/photos printed.app/photos printed";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nitrogen.app/Nitrogen";
 			};
 			name = Debug;
 		};
@@ -513,7 +533,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/photos printed.app/photos printed";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nitrogen.app/Nitrogen";
 			};
 			name = Release;
 		};
@@ -566,7 +586,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EB6DC77E271981DA006B4A56 /* Build configuration list for PBXProject "photos printed" */ = {
+		EB6DC77E271981DA006B4A56 /* Build configuration list for PBXProject "Nitrogen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB6DC7A3271981DC006B4A56 /* Debug */,
@@ -575,7 +595,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB6DC7A5271981DC006B4A56 /* Build configuration list for PBXNativeTarget "photos printed" */ = {
+		EB6DC7A5271981DC006B4A56 /* Build configuration list for PBXNativeTarget "Nitrogen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB6DC7A6271981DC006B4A56 /* Debug */,
@@ -584,7 +604,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB6DC7A8271981DC006B4A56 /* Build configuration list for PBXNativeTarget "photos printedTests" */ = {
+		EB6DC7A8271981DC006B4A56 /* Build configuration list for PBXNativeTarget "NitrogenTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB6DC7A9271981DC006B4A56 /* Debug */,
@@ -593,7 +613,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB6DC7AB271981DC006B4A56 /* Build configuration list for PBXNativeTarget "photos printedUITests" */ = {
+		EB6DC7AB271981DC006B4A56 /* Build configuration list for PBXNativeTarget "NitrogenUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB6DC7AC271981DC006B4A56 /* Debug */,
