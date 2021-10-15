@@ -10,7 +10,7 @@ import SwiftUI
 
 struct BatteryTestView: View{
   var body: some View {
-    View {
+    ScrollView {
       Text("Battery")
     }
     .navigationTitle("Battery Information")

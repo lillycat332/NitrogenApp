@@ -10,7 +10,7 @@ import SwiftUI
 
 struct DeviceView: View{
   var body: some View {
-    View {
+    ScrollView {
       Text("About this Device")
     }
     .navigationTitle("Device Information")

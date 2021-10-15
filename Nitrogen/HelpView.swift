@@ -10,7 +10,7 @@ import SwiftUI
 
 struct HelpView: View{
   var body: some View {
-    View {
+    ScrollView {
       Text("Help")
     }
     .navigationTitle("Nitrogen Help")
