@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit.UIDevice
 
 func machineName() -> String {
   var systemInfo = utsname()
@@ -46,3 +47,35 @@ func sysInfo() -> String {
     return identifier + String(UnicodeScalar(UInt8(value)))
   }
 }
+
+var batteryPercent: Float {
+  UIDevice.current.isBatteryMonitoringEnabled = true
+  return (UIDevice.current.batteryLevel * 100)
+}
+var batteryIsCharging: String {
+  UIDevice.current.isBatteryMonitoringEnabled = true
+  var batteryState: UIDevice.BatteryState { UIDevice.current.batteryState }
+    switch batteryState {
+    case .unplugged:
+      return "Not Charging"
+    case .unknown:
+      return "Unknown"
+    case .charging:
+      return "Charging"
+    case .full:
+      return "Full"
+    @unknown default:
+      return "UnknVown"
+    }
+}
+
+var totalMem: UInt64 {
+  print(ProcessInfo.processInfo.physicalMemory)
+  return ProcessInfo.processInfo.physicalMemory
+}
+
+#if targetEnvironment(simulator)
+var compiledForSim = true
+#else
+var compiledForSim = false
+#endif

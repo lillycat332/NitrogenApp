@@ -7,12 +7,18 @@
 
 import Foundation
 import SwiftUI
-import UIKit
+
+
 
 struct BatteryTestView: View{
   var body: some View {
     VStack {
-      Text("Battery")
+      List{
+        Section{
+          Label("Battery Level: \(Int(batteryPercent))%", systemImage: "battery.100")
+          Label("Battery State: \(batteryIsCharging)", systemImage: "battery.100")
+        }
+      }
     }
     .navigationTitle("Battery Information")
   }

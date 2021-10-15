@@ -9,16 +9,17 @@ import Foundation
 import SwiftUI
 
 struct AboutView: View{
+  var version = "0.3.4"
   var body: some View {
-    ScrollView {
-      Text(
-    """
-    Nitrogen is a specs and tests app for iOS Devices.
-    """
-      )
-        .padding()
-        .navigationTitle("About Nitrogen")
+    VStack {
+      List {
+        Section {
+          Label("Version number: \(version)", systemImage: "arrow.down.app.fill")
+          Label("compiledForSim: \(String((compiledForSim)))", systemImage: "laptopcomputer")
+        }
+      }
     }
+    .navigationTitle("About Nitrogen")
   }
   
 }

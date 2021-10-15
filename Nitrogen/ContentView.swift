@@ -6,9 +6,6 @@
  //
 
 import SwiftUI
-import Combine
-//import DeviceKit
-
 
 struct ContentView: View {
   var body: some View {

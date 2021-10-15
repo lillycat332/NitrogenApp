@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-//import DeviceKit
 
 @main
 struct NitrogenApp: App {

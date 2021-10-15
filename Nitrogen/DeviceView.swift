@@ -14,6 +14,10 @@ struct DeviceView: View{
       List {
         Section {
           Label("Device identifier: \(machineName())", systemImage: "iphone")
+          Label("Memory: \(totalMem / 1028000) MB", systemImage: "memorychip.fill")
+        }
+        
+        Section{
           Label("System Name: \(sysName())", systemImage: "iphone")
           Label("Version: \(deviceVersion())", systemImage: "iphone")
         }
