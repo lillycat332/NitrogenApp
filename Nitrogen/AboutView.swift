@@ -9,12 +9,10 @@ import Foundation
 import SwiftUI
 
 struct AboutView: View{
-  var version = "0.3.4"
   var body: some View {
     VStack {
       List {
         Section {
-          Label("Version number: \(version)", systemImage: "arrow.down.app.fill")
           Label("compiledForSim: \(String((compiledForSim)))", systemImage: "laptopcomputer")
         }
       }

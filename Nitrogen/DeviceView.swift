@@ -14,12 +14,15 @@ struct DeviceView: View{
       List {
         Section {
           Label("Device identifier: \(machineName())", systemImage: "iphone")
-          Label("Memory: \(totalMem / 1028000) MB", systemImage: "memorychip.fill")
+          Label("Memory: \(totalMem) Bytes", systemImage: "memorychip.fill")
+          Label("Processor Cores: \(totalCores)", systemImage: "memorychip.fill")
         }
         
         Section{
           Label("System Name: \(sysName())", systemImage: "iphone")
-          Label("Version: \(deviceVersion())", systemImage: "iphone")
+          Label("Kernel Version: \(deviceVersion())", systemImage: "iphone")
+          Label("OS Version String: \(OSVer)", systemImage: "iphone")
+          Label("Uptime: \(uptime)", systemImage: "iphone")
         }
       }
     }

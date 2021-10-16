@@ -70,8 +70,23 @@ var batteryIsCharging: String {
 }
 
 var totalMem: UInt64 {
-  print(ProcessInfo.processInfo.physicalMemory)
   return ProcessInfo.processInfo.physicalMemory
+}
+
+var totalCores: Int {
+  return ProcessInfo.processInfo.processorCount
+}
+
+var OSVer : String {
+  return ProcessInfo.processInfo.operatingSystemVersionString
+}
+
+var hostName : String {
+  return ProcessInfo.processInfo.hostName
+}
+
+var uptime : TimeInterval {
+  return ProcessInfo.processInfo.systemUptime
 }
 
 #if targetEnvironment(simulator)
