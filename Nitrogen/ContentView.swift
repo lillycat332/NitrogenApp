@@ -11,7 +11,7 @@ struct ContentView: View {
   var body: some View {
     NavigationView {
       List {
-        Section {
+        Section(header: Text("About this Device")) {
           NavigationLink(destination: DeviceView()) {
             Label("Device", systemImage: "ipad")
           }
@@ -20,7 +20,7 @@ struct ContentView: View {
           }
         }
         
-        Section {
+        Section(header: Text("Information")) {
           NavigationLink(destination: HelpView()) {
             Label("Help", systemImage: "questionmark")
           }
@@ -35,14 +35,20 @@ struct ContentView: View {
         }
         
       }
-      .navigationBarTitle(Text("Nitrogen"))
+      .navigationTitle(Text("Nitrogen"))
+      DeviceView()
     }
   }
 }
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    ContentView()
+    if #available(iOS 15.0, *) {
+      ContentView()
+        .previewInterfaceOrientation(.landscapeRight)
+    } else {
+      // Fallback on earlier versions
+    }
   }
 }
 

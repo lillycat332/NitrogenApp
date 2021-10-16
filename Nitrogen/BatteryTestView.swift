@@ -14,7 +14,7 @@ struct BatteryTestView: View{
   var body: some View {
     VStack {
       List{
-        Section{
+        Section(header: Text("Battery Info")) {
           Label("Battery Level: \(Int(batteryPercent))%", systemImage: "battery.100")
           Label("Battery State: \(batteryIsCharging)", systemImage: "battery.100")
         }
