@@ -1,6 +1,6 @@
 # NitrogenApp
 
-Nitrogen is a BSD Licensed tool for viewing iOS device specs and battery information.
+Nitrogen is a BSD Licensed tool for viewing iOS system info. It is written in Swift with SwiftUI, and currently has no third party library dependencies.
 Currently, it can show battery level and state, OS information, device name + some specs and hostname.
 <p float="left">
   <img src="https://user-images.githubusercontent.com/54189319/137585092-0e93b77f-44c0-4787-a538-515b729021d2.png" width="200">
