@@ -10,5 +10,5 @@ Currently, it can show battery level and state, OS information, device name + so
 <p float="left">
   <img src="https://user-images.githubusercontent.com/54189319/137588317-7161c933-7a6d-45b2-917d-5398ba5dc1f6.png" width="200">
   <img src="https://user-images.githubusercontent.com/54189319/137588324-c5dc2556-87d2-4a1e-8741-f3c786d4e72b.png" width="200">
-  <img src=">https://user-images.githubusercontent.com/54189319/137588329-7d18f00a-1b83-4ee6-8507-a7a01bf5580f.png" width="200">
+  <img src="https://user-images.githubusercontent.com/54189319/137588329-7d18f00a-1b83-4ee6-8507-a7a01bf5580f.png" width="200">
 </p>
