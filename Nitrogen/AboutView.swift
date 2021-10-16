@@ -13,7 +13,6 @@ struct AboutView: View{
     VStack {
       List {
         Section {
-          Label("compiledForSim: \(String((compiledForSim)))", systemImage: "laptopcomputer")
         }
       }
     }

@@ -16,6 +16,7 @@ struct DeviceView: View{
           Label("Device identifier: \(machineName())", systemImage: "iphone")
           Label("Memory: \(totalMem) Bytes", systemImage: "memorychip.fill")
           Label("Processor Cores: \(totalCores)", systemImage: "memorychip.fill")
+          Label("Device is simulator: \(String((isSimulator)))", systemImage: "laptopcomputer")
         }
         
         Section{
@@ -23,6 +24,7 @@ struct DeviceView: View{
           Label("Kernel Version: \(deviceVersion())", systemImage: "iphone")
           Label("OS Version String: \(OSVer)", systemImage: "iphone")
           Label("Uptime: \(uptime)", systemImage: "iphone")
+          Label("Hostname: \(hostName)", systemImage: "iphone")
         }
       }
     }

@@ -52,21 +52,22 @@ var batteryPercent: Float {
   UIDevice.current.isBatteryMonitoringEnabled = true
   return (UIDevice.current.batteryLevel * 100)
 }
+
 var batteryIsCharging: String {
   UIDevice.current.isBatteryMonitoringEnabled = true
   var batteryState: UIDevice.BatteryState { UIDevice.current.batteryState }
-    switch batteryState {
-    case .unplugged:
-      return "Not Charging"
-    case .unknown:
-      return "Unknown"
-    case .charging:
-      return "Charging"
-    case .full:
-      return "Full"
-    @unknown default:
-      return "UnknVown"
-    }
+  switch batteryState {
+  case .unplugged:
+    return "Not Charging"
+  case .unknown:
+    return "Unknown"
+  case .charging:
+    return "Charging"
+  case .full:
+    return "Full"
+  @unknown default:
+    return "UnknVown"
+  }
 }
 
 var totalMem: UInt64 {
@@ -89,8 +90,6 @@ var uptime : TimeInterval {
   return ProcessInfo.processInfo.systemUptime
 }
 
-#if targetEnvironment(simulator)
-var compiledForSim = true
-#else
-var compiledForSim = false
-#endif
+var isSimulator: Bool {
+  return TARGET_OS_SIMULATOR != 0
+}
