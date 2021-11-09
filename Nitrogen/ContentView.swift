@@ -27,11 +27,6 @@ struct ContentView: View {
           NavigationLink(destination: AboutView()) {
             Label("About Nitrogen", systemImage: "command")
           }
-
-          
-          NavigationLink(destination: LicenseView()) {
-            Label("View License", systemImage: "doc.on.doc.fill")
-          }
         }
         
       }

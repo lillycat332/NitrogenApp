@@ -25,6 +25,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>Nitrogen iPad.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>Nitrogen.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>

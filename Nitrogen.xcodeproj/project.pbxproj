@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EB6DC787271981DA006B4A56 /* NitrogenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DC786271981DA006B4A56 /* NitrogenApp.swift */; };
-		EB6DC789271981DA006B4A56 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DC788271981DA006B4A56 /* ContentView.swift */; };
 		EB6DC78B271981DB006B4A56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB6DC78A271981DB006B4A56 /* Assets.xcassets */; };
 		EB6DC78E271981DC006B4A56 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB6DC78D271981DC006B4A56 /* Preview Assets.xcassets */; };
 		EB6DC798271981DC006B4A56 /* NitrogenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DC797271981DC006B4A56 /* NitrogenTests.swift */; };
 		EB6DC7A2271981DC006B4A56 /* NitrogenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DC7A1271981DC006B4A56 /* NitrogenUITests.swift */; };
-		EB6DC7AF27199C5B006B4A56 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DC7AE27199C5B006B4A56 /* HelpView.swift */; };
-		EB6DC7B127199C9E006B4A56 /* BatteryTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DC7B027199C9E006B4A56 /* BatteryTestView.swift */; };
-		EB6DC7B327199CCF006B4A56 /* DeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DC7B227199CCF006B4A56 /* DeviceView.swift */; };
-		EB6DC7B527199CEA006B4A56 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DC7B427199CEA006B4A56 /* AboutView.swift */; };
-		EB6DC7B727199D07006B4A56 /* LicenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DC7B627199D07006B4A56 /* LicenseView.swift */; };
-		EB6DC7BC2719BD4F006B4A56 /* HWInfoGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DC7BB2719BD4F006B4A56 /* HWInfoGetter.swift */; };
+		EBF47410273AA613004E2E16 /* SlideOverCard in Frameworks */ = {isa = PBXBuildFile; productRef = EBF4740F273AA613004E2E16 /* SlideOverCard */; };
+		EBF4744D273AC448004E2E16 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF47445273AC447004E2E16 /* AboutView.swift */; };
+		EBF4744E273AC448004E2E16 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4744C273AC448004E2E16 /* HelpView.swift */; };
+		EBF4744F273AC448004E2E16 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF47446273AC447004E2E16 /* ContentView.swift */; };
+		EBF47450273AC448004E2E16 /* BatteryTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF47448273AC448004E2E16 /* BatteryTestView.swift */; };
+		EBF47451273AC448004E2E16 /* NitrogenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF47447273AC447004E2E16 /* NitrogenApp.swift */; };
+		EBF47452273AC448004E2E16 /* DeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4744B273AC448004E2E16 /* DeviceView.swift */; };
+		EBF47453273AC448004E2E16 /* HWInfoGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF47449273AC448004E2E16 /* HWInfoGetter.swift */; };
+		EBF47454273AC448004E2E16 /* LicenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4744A273AC448004E2E16 /* LicenseView.swift */; };
+		EBF47459273AC7D4004E2E16 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF47445273AC447004E2E16 /* AboutView.swift */; };
+		EBF4745A273AC7D4004E2E16 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4744C273AC448004E2E16 /* HelpView.swift */; };
+		EBF4745B273AC7D4004E2E16 /* LicenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4744A273AC448004E2E16 /* LicenseView.swift */; };
+		EBF4745C273AC7D4004E2E16 /* DeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4744B273AC448004E2E16 /* DeviceView.swift */; };
+		EBF4745D273AC7D4004E2E16 /* NitrogenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF47447273AC447004E2E16 /* NitrogenApp.swift */; };
+		EBF4745E273AC7D4004E2E16 /* BatteryTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF47448273AC448004E2E16 /* BatteryTestView.swift */; };
+		EBF4745F273AC7D4004E2E16 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF47446273AC447004E2E16 /* ContentView.swift */; };
+		EBF47460273AC7D4004E2E16 /* HWInfoGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF47449273AC448004E2E16 /* HWInfoGetter.swift */; };
+		EBF47462273AC7D4004E2E16 /* SlideOverCard in Frameworks */ = {isa = PBXBuildFile; productRef = EBF47456273AC7D4004E2E16 /* SlideOverCard */; };
+		EBF47464273AC7D4004E2E16 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB6DC78D271981DC006B4A56 /* Preview Assets.xcassets */; };
+		EBF47465273AC7D4004E2E16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB6DC78A271981DB006B4A56 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,20 +52,21 @@
 
 /* Begin PBXFileReference section */
 		EB6DC783271981DA006B4A56 /* Nitrogen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nitrogen.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB6DC786271981DA006B4A56 /* NitrogenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NitrogenApp.swift; sourceTree = "<group>"; };
-		EB6DC788271981DA006B4A56 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EB6DC78A271981DB006B4A56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB6DC78D271981DC006B4A56 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EB6DC793271981DC006B4A56 /* NitrogenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NitrogenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB6DC797271981DC006B4A56 /* NitrogenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NitrogenTests.swift; sourceTree = "<group>"; };
 		EB6DC79D271981DC006B4A56 /* NitrogenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NitrogenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB6DC7A1271981DC006B4A56 /* NitrogenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NitrogenUITests.swift; sourceTree = "<group>"; };
-		EB6DC7AE27199C5B006B4A56 /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
-		EB6DC7B027199C9E006B4A56 /* BatteryTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryTestView.swift; sourceTree = "<group>"; };
-		EB6DC7B227199CCF006B4A56 /* DeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceView.swift; sourceTree = "<group>"; };
-		EB6DC7B427199CEA006B4A56 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
-		EB6DC7B627199D07006B4A56 /* LicenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseView.swift; sourceTree = "<group>"; };
-		EB6DC7BB2719BD4F006B4A56 /* HWInfoGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWInfoGetter.swift; sourceTree = "<group>"; };
+		EBF47445273AC447004E2E16 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		EBF47446273AC447004E2E16 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EBF47447273AC447004E2E16 /* NitrogenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NitrogenApp.swift; sourceTree = "<group>"; };
+		EBF47448273AC448004E2E16 /* BatteryTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryTestView.swift; sourceTree = "<group>"; };
+		EBF47449273AC448004E2E16 /* HWInfoGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWInfoGetter.swift; sourceTree = "<group>"; };
+		EBF4744A273AC448004E2E16 /* LicenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseView.swift; sourceTree = "<group>"; };
+		EBF4744B273AC448004E2E16 /* DeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceView.swift; sourceTree = "<group>"; };
+		EBF4744C273AC448004E2E16 /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
+		EBF47469273AC7D4004E2E16 /* Nitrogen-iPad-test-thing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nitrogen-iPad-test-thing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBF47410273AA613004E2E16 /* SlideOverCard in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +92,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EBF47461273AC7D4004E2E16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBF47462273AC7D4004E2E16 /* SlideOverCard in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		EB6DC77A271981DA006B4A56 = {
 			isa = PBXGroup;
 			children = (
+				EBF4746A273AC7D4004E2E16 /* Resources-iPad */,
 				EB6DC785271981DA006B4A56 /* Nitrogen */,
 				EB6DC796271981DC006B4A56 /* NitrogenTests */,
 				EB6DC7A0271981DC006B4A56 /* NitrogenUITests */,
@@ -97,6 +120,7 @@
 				EB6DC783271981DA006B4A56 /* Nitrogen.app */,
 				EB6DC793271981DC006B4A56 /* NitrogenTests.xctest */,
 				EB6DC79D271981DC006B4A56 /* NitrogenUITests.xctest */,
+				EBF47469273AC7D4004E2E16 /* Nitrogen-iPad-test-thing.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,14 +128,14 @@
 		EB6DC785271981DA006B4A56 /* Nitrogen */ = {
 			isa = PBXGroup;
 			children = (
-				EB6DC786271981DA006B4A56 /* NitrogenApp.swift */,
-				EB6DC788271981DA006B4A56 /* ContentView.swift */,
-				EB6DC7B227199CCF006B4A56 /* DeviceView.swift */,
-				EB6DC7B027199C9E006B4A56 /* BatteryTestView.swift */,
-				EB6DC7AE27199C5B006B4A56 /* HelpView.swift */,
-				EB6DC7B427199CEA006B4A56 /* AboutView.swift */,
-				EB6DC7B627199D07006B4A56 /* LicenseView.swift */,
-				EB6DC7BB2719BD4F006B4A56 /* HWInfoGetter.swift */,
+				EBF47447273AC447004E2E16 /* NitrogenApp.swift */,
+				EBF47446273AC447004E2E16 /* ContentView.swift */,
+				EBF4744B273AC448004E2E16 /* DeviceView.swift */,
+				EBF47448273AC448004E2E16 /* BatteryTestView.swift */,
+				EBF4744C273AC448004E2E16 /* HelpView.swift */,
+				EBF47445273AC447004E2E16 /* AboutView.swift */,
+				EBF4744A273AC448004E2E16 /* LicenseView.swift */,
+				EBF47449273AC448004E2E16 /* HWInfoGetter.swift */,
 				EB6DC78A271981DB006B4A56 /* Assets.xcassets */,
 				EB6DC78C271981DC006B4A56 /* Preview Content */,
 			);
@@ -142,6 +166,13 @@
 			path = NitrogenUITests;
 			sourceTree = "<group>";
 		};
+		EBF4746A273AC7D4004E2E16 /* Resources-iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Resources-iPad";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,6 +190,7 @@
 			);
 			name = Nitrogen;
 			packageProductDependencies = (
+				EBF4740F273AA613004E2E16 /* SlideOverCard */,
 			);
 			productName = "photos printed";
 			productReference = EB6DC783271981DA006B4A56 /* Nitrogen.app */;
@@ -200,6 +232,26 @@
 			productReference = EB6DC79D271981DC006B4A56 /* NitrogenUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		EBF47455273AC7D4004E2E16 /* Nitrogen-iPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBF47466273AC7D4004E2E16 /* Build configuration list for PBXNativeTarget "Nitrogen-iPad" */;
+			buildPhases = (
+				EBF47458273AC7D4004E2E16 /* Sources */,
+				EBF47461273AC7D4004E2E16 /* Frameworks */,
+				EBF47463273AC7D4004E2E16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Nitrogen-iPad";
+			packageProductDependencies = (
+				EBF47456273AC7D4004E2E16 /* SlideOverCard */,
+			);
+			productName = "photos printed";
+			productReference = EBF47469273AC7D4004E2E16 /* Nitrogen-iPad-test-thing.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -233,12 +285,14 @@
 			);
 			mainGroup = EB6DC77A271981DA006B4A56;
 			packageReferences = (
+				EBF4740E273AA613004E2E16 /* XCRemoteSwiftPackageReference "swiftUI-slide-over-card" */,
 			);
 			productRefGroup = EB6DC784271981DA006B4A56 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				EB6DC782271981DA006B4A56 /* Nitrogen */,
+				EBF47455273AC7D4004E2E16 /* Nitrogen-iPad */,
 				EB6DC792271981DC006B4A56 /* NitrogenTests */,
 				EB6DC79C271981DC006B4A56 /* NitrogenUITests */,
 			);
@@ -269,6 +323,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EBF47463273AC7D4004E2E16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBF47464273AC7D4004E2E16 /* Preview Assets.xcassets in Resources */,
+				EBF47465273AC7D4004E2E16 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -276,14 +339,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB6DC7AF27199C5B006B4A56 /* HelpView.swift in Sources */,
-				EB6DC7BC2719BD4F006B4A56 /* HWInfoGetter.swift in Sources */,
-				EB6DC789271981DA006B4A56 /* ContentView.swift in Sources */,
-				EB6DC7B327199CCF006B4A56 /* DeviceView.swift in Sources */,
-				EB6DC7B727199D07006B4A56 /* LicenseView.swift in Sources */,
-				EB6DC7B127199C9E006B4A56 /* BatteryTestView.swift in Sources */,
-				EB6DC7B527199CEA006B4A56 /* AboutView.swift in Sources */,
-				EB6DC787271981DA006B4A56 /* NitrogenApp.swift in Sources */,
+				EBF4744D273AC448004E2E16 /* AboutView.swift in Sources */,
+				EBF4744E273AC448004E2E16 /* HelpView.swift in Sources */,
+				EBF47454273AC448004E2E16 /* LicenseView.swift in Sources */,
+				EBF47452273AC448004E2E16 /* DeviceView.swift in Sources */,
+				EBF47451273AC448004E2E16 /* NitrogenApp.swift in Sources */,
+				EBF47450273AC448004E2E16 /* BatteryTestView.swift in Sources */,
+				EBF4744F273AC448004E2E16 /* ContentView.swift in Sources */,
+				EBF47453273AC448004E2E16 /* HWInfoGetter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +363,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB6DC7A2271981DC006B4A56 /* NitrogenUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBF47458273AC7D4004E2E16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBF47459273AC7D4004E2E16 /* AboutView.swift in Sources */,
+				EBF4745A273AC7D4004E2E16 /* HelpView.swift in Sources */,
+				EBF4745B273AC7D4004E2E16 /* LicenseView.swift in Sources */,
+				EBF4745C273AC7D4004E2E16 /* DeviceView.swift in Sources */,
+				EBF4745D273AC7D4004E2E16 /* NitrogenApp.swift in Sources */,
+				EBF4745E273AC7D4004E2E16 /* BatteryTestView.swift in Sources */,
+				EBF4745F273AC7D4004E2E16 /* ContentView.swift in Sources */,
+				EBF47460273AC7D4004E2E16 /* HWInfoGetter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,7 +519,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 696afc4;
+				CURRENT_PROJECT_VERSION = 26959bf;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"Nitrogen/Preview Content\"";
 				DEVELOPMENT_TEAM = UN964XDAH7;
@@ -458,7 +536,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.7df.Nitrogen;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.7df.N2;
 				PRODUCT_NAME = Nitrogen;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -472,7 +550,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 696afc4;
+				CURRENT_PROJECT_VERSION = 26959bf;
 				DEVELOPMENT_ASSET_PATHS = "\"Nitrogen/Preview Content\"";
 				DEVELOPMENT_TEAM = UN964XDAH7;
 				ENABLE_PREVIEWS = YES;
@@ -488,7 +566,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.7df.Nitrogen;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.7df.N2;
 				PRODUCT_NAME = Nitrogen;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -592,6 +670,67 @@
 			};
 			name = Release;
 		};
+		EBF47467273AC7D4004E2E16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 26959bf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "\"Nitrogen/Preview Content\"";
+				DEVELOPMENT_TEAM = UN964XDAH7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.7df.N2;
+				PRODUCT_NAME = "Nitrogen-iPad-test-thing";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		EBF47468273AC7D4004E2E16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 26959bf;
+				DEVELOPMENT_ASSET_PATHS = "\"Nitrogen/Preview Content\"";
+				DEVELOPMENT_TEAM = UN964XDAH7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.7df.N2;
+				PRODUCT_NAME = "Nitrogen-iPad-test-thing";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -631,7 +770,48 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		EBF47466273AC7D4004E2E16 /* Build configuration list for PBXNativeTarget "Nitrogen-iPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBF47467273AC7D4004E2E16 /* Debug */,
+				EBF47468273AC7D4004E2E16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EBF4740E273AA613004E2E16 /* XCRemoteSwiftPackageReference "swiftUI-slide-over-card" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/moifort/swiftUI-slide-over-card";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		EBF47457273AC7D4004E2E16 /* XCRemoteSwiftPackageReference "swiftUI-slide-over-card" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/moifort/swiftUI-slide-over-card";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EBF4740F273AA613004E2E16 /* SlideOverCard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBF4740E273AA613004E2E16 /* XCRemoteSwiftPackageReference "swiftUI-slide-over-card" */;
+			productName = SlideOverCard;
+		};
+		EBF47456273AC7D4004E2E16 /* SlideOverCard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBF47457273AC7D4004E2E16 /* XCRemoteSwiftPackageReference "swiftUI-slide-over-card" */;
+			productName = SlideOverCard;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EB6DC77B271981DA006B4A56 /* Project object */;
 }
