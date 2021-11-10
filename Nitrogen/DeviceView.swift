@@ -13,7 +13,7 @@ struct DeviceView: View{
     Form {
       Section(header: Text("Hardware Info")) {
         HStack {
-          Label("Device identifier:", systemImage: "iphone")
+          Label("Device identifier", systemImage: "iphone")
           Spacer()
           Text("\(machineName())")
             .multilineTextAlignment(.trailing)
@@ -21,7 +21,7 @@ struct DeviceView: View{
             .font(.system(.body, design: .monospaced))
         }
         HStack {
-          Label("Memory:", systemImage: "memorychip.fill")
+          Label("RAM", systemImage: "memorychip.fill")
           Spacer()
           Text("\(totalMem) Bytes")
             .multilineTextAlignment(.trailing)
@@ -29,7 +29,7 @@ struct DeviceView: View{
             .font(.system(.body, design: .monospaced))
         }
         HStack {
-          Label("Processor Cores:", systemImage: "memorychip.fill")
+          Label("Processor Cores", systemImage: "memorychip.fill")
           Spacer()
           Text("\(totalCores)")
             .multilineTextAlignment(.trailing)
@@ -37,7 +37,7 @@ struct DeviceView: View{
             .font(.system(.body, design: .monospaced))
         }
         HStack {
-          Label("Device is simulator:", systemImage: "laptopcomputer")
+          Label("Device is simulator", systemImage: "laptopcomputer")
           Spacer()
           Text("\(String((isSimulator)))")
             .multilineTextAlignment(.trailing)
@@ -47,7 +47,7 @@ struct DeviceView: View{
       }
       Section(header: Text("Software info")) {
         HStack {
-          Label("System Name:", systemImage: "iphone")
+          Label("System Name", systemImage: "iphone")
           Spacer()
           Text("\(sysName())")
             .multilineTextAlignment(.trailing)
@@ -55,7 +55,7 @@ struct DeviceView: View{
             .font(.system(.body, design: .monospaced))
         }
 //        HStack {
-//          Label("Kernel Version:", systemImage: "iphone")
+//          Label("Kernel Version", systemImage: "iphone")
 //          Spacer()
 //          Text("\(deviceVersion())")
 //            .multilineTextAlignment(.trailing)
@@ -63,7 +63,7 @@ struct DeviceView: View{
 //            .font(.system(.body, design: .monospaced))
 //        }
         HStack {
-          Label("OS Version String:", systemImage: "iphone")
+          Label("OS Version", systemImage: "textformat.123")
           Spacer()
           Text("\(OSVer)")
             .multilineTextAlignment(.trailing)
@@ -71,7 +71,7 @@ struct DeviceView: View{
             .font(.system(.body, design: .monospaced))
         }
         HStack {
-          Label("Uptime:", systemImage: "clock.fill")
+          Label("Uptime", systemImage: "clock.fill")
           Spacer()
           Text("\(uptime)")
             .multilineTextAlignment(.trailing)
@@ -79,7 +79,7 @@ struct DeviceView: View{
             .font(.system(.body, design: .monospaced))
         }
         HStack {
-          Label("Hostname:", systemImage: "network")
+          Label("Hostname", systemImage: "network")
           Spacer()
           Text("\(hostName)")
             .multilineTextAlignment(.trailing)

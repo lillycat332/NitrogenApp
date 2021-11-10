@@ -79,7 +79,7 @@ var totalCores: Int {
 }
 
 var OSVer : String {
-  return ProcessInfo.processInfo.operatingSystemVersionString
+  return UIDevice.current.systemVersion
 }
 
 var hostName : String {

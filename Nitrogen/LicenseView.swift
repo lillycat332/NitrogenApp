@@ -62,6 +62,7 @@ struct N2LicenseView: View {
       OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       """
       )
+        .font(.system(.body, design: .monospaced))
         .padding()
     }
     .navigationTitle("Nitrogen License")
@@ -97,6 +98,7 @@ struct SLOCLicenseView: View {
       """
       )
         .padding()
+        .font(.system(.body, design: .monospaced))
     }
     .navigationTitle("SlideOverCard License")
   }

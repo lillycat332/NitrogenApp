@@ -15,8 +15,22 @@ struct BatteryTestView: View{
     VStack {
       List{
         Section(header: Text("Battery Info")) {
-          Label("Battery Level: \(Int(batteryPercent))%", systemImage: "battery.100")
-          Label("Battery State: \(batteryIsCharging)", systemImage: "battery.100")
+          HStack {
+            Label("Battery Level:", systemImage: "battery.100")
+            Spacer()
+            Text("\(Int(batteryPercent))%")
+              .multilineTextAlignment(.trailing)
+              .foregroundColor(.gray)
+              .font(.system(.body, design: .monospaced))
+          }
+          HStack {
+            Label("Battery State:", systemImage: "battery.100.bolt")
+            Spacer()
+            Text("\(batteryIsCharging)")
+              .multilineTextAlignment(.trailing)
+              .foregroundColor(.gray)
+              .font(.system(.body, design: .monospaced))
+          }
         }
       }
     }
