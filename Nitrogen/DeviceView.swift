@@ -32,7 +32,7 @@ struct DeviceView: View{
       Section(header: Text("Hardware Info"), footer: Text("Hardware refers to the physical components of your device.")) {
         FormView(label: "Device Identifier", symbol: "iphone", value: machineName())
         FormView(label: "Model", symbol: "iphone", value: "\(modelName)")
-        FormView(label: "CPU", symbol: "memorychip.fill", value: "\(CPUinfoStr)")
+        FormView(label: "SoC", symbol: "memorychip.fill", value: "\(CPUinfoStr)")
         FormView(label: "RAM (bytes)", symbol: "memorychip.fill", value: "\(totalMem)")
         FormView(label: "Processor Cores", symbol: "memorychip.fill", value: "\(totalCores)")
         FormView(label: "Device is Simulator", symbol: "laptopcomputer", value: "\(isSimulator)")
