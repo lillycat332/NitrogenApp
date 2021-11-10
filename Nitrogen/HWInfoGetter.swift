@@ -1,6 +1,6 @@
 //
-//  SpecGetter.swift
-//  SpecGetter
+//  HWInfoGetter.swift
+//  HWInfoGetter
 //
 //  Created by Lilly Cham on 15/10/2021.
 //
@@ -70,8 +70,8 @@ var batteryIsCharging: String {
   }
 }
 
-var totalMem: UInt64 {
-  return ProcessInfo.processInfo.physicalMemory
+var totalMem: Float {
+  return Float(ProcessInfo.processInfo.physicalMemory) / 1024.0 / 1024.0 / 1024.0
 }
 
 var totalCores: Int {

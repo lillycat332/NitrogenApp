@@ -33,7 +33,7 @@ struct DeviceView: View{
         FormView(label: "Device Identifier", symbol: "iphone", value: machineName())
         FormView(label: "Model", symbol: "iphone", value: "\(modelName)")
         FormView(label: "SoC", symbol: "memorychip.fill", value: "\(CPUinfoStr)")
-        FormView(label: "RAM (bytes)", symbol: "memorychip.fill", value: "\(totalMem)")
+        FormView(label: "RAM (GiB)", symbol: "memorychip.fill", value: "\(totalMem)")
         FormView(label: "Processor Cores", symbol: "memorychip.fill", value: "\(totalCores)")
         FormView(label: "Device is Simulator", symbol: "laptopcomputer", value: "\(isSimulator)")
       }

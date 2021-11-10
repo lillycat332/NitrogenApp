@@ -60,7 +60,7 @@ struct N2LicenseView: View {
       """
       )
         .font(.system(.body, design: .monospaced))
-        .padding()
+        .multilineTextAlignment(.leading)
     }
     .navigationTitle("Nitrogen License")
   }

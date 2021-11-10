@@ -9,10 +9,10 @@ import SwiftUI
 
 struct AboutView: View{
   var body: some View {
-      List {
-        NavigationLink(destination: LicenseView()) {
-          Label("View Licenses", systemImage: "doc.on.doc.fill")
-        }
+    List {
+      NavigationLink(destination: LicenseView()) {
+        Label("View Licenses", systemImage: "doc.on.doc.fill")
+      }
     }
     .navigationTitle("About")
   }
