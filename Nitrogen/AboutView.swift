@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import SlideOverCard
 
 struct AboutView: View{
   var body: some View {

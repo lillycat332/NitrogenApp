@@ -67,6 +67,8 @@
 		EBF4744B273AC448004E2E16 /* DeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceView.swift; sourceTree = "<group>"; };
 		EBF4744C273AC448004E2E16 /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
 		EBF47469273AC7D4004E2E16 /* Nitrogen-iPad-test-thing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nitrogen-iPad-test-thing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBF4746B273ACAEF004E2E16 /* Nitrogen-iPad-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Nitrogen-iPad-Info.plist"; sourceTree = "<group>"; };
+		EBF4746C273ACAF4004E2E16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		EB6DC77A271981DA006B4A56 = {
 			isa = PBXGroup;
 			children = (
+				EBF4746B273ACAEF004E2E16 /* Nitrogen-iPad-Info.plist */,
 				EBF4746A273AC7D4004E2E16 /* Resources-iPad */,
 				EB6DC785271981DA006B4A56 /* Nitrogen */,
 				EB6DC796271981DC006B4A56 /* NitrogenTests */,
@@ -128,6 +131,7 @@
 		EB6DC785271981DA006B4A56 /* Nitrogen */ = {
 			isa = PBXGroup;
 			children = (
+				EBF4746C273ACAF4004E2E16 /* Info.plist */,
 				EBF47447273AC447004E2E16 /* NitrogenApp.swift */,
 				EBF47446273AC447004E2E16 /* ContentView.swift */,
 				EBF4744B273AC448004E2E16 /* DeviceView.swift */,
@@ -525,9 +529,10 @@
 				DEVELOPMENT_TEAM = UN964XDAH7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = Nitrogen/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -555,9 +560,10 @@
 				DEVELOPMENT_TEAM = UN964XDAH7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = Nitrogen/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -682,6 +688,7 @@
 				DEVELOPMENT_TEAM = UN964XDAH7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Nitrogen-iPad-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -712,6 +719,7 @@
 				DEVELOPMENT_TEAM = UN964XDAH7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Nitrogen-iPad-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
