@@ -14,23 +14,9 @@ struct BatteryTestView: View{
   var body: some View {
     VStack {
       List{
-        Section(header: Text("Battery Info")) {
-          HStack {
-            Label("Battery Level:", systemImage: "battery.100")
-            Spacer()
-            Text("\(Int(batteryPercent))%")
-              .multilineTextAlignment(.trailing)
-              .foregroundColor(.gray)
-              .font(.system(.body, design: .monospaced))
-          }
-          HStack {
-            Label("Battery State:", systemImage: "battery.100.bolt")
-            Spacer()
-            Text("\(batteryIsCharging)")
-              .multilineTextAlignment(.trailing)
-              .foregroundColor(.gray)
-              .font(.system(.body, design: .monospaced))
-          }
+        Section(header: Text("Battery Info"), footer: Text("To access battery health, look in settings or check a program like coconutBattery.")) {
+          FormView(label: "Battery Level", symbol: "battery.100", value: "\(batteryPercent)%")
+          FormView(label: "Battery State", symbol: "battery.100.bolt", value: "\(batteryIsCharging)")
         }
       }
     }

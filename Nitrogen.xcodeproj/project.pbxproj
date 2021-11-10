@@ -11,7 +11,6 @@
 		EB6DC78E271981DC006B4A56 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB6DC78D271981DC006B4A56 /* Preview Assets.xcassets */; };
 		EB6DC798271981DC006B4A56 /* NitrogenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DC797271981DC006B4A56 /* NitrogenTests.swift */; };
 		EB6DC7A2271981DC006B4A56 /* NitrogenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DC7A1271981DC006B4A56 /* NitrogenUITests.swift */; };
-		EBF47410273AA613004E2E16 /* SlideOverCard in Frameworks */ = {isa = PBXBuildFile; productRef = EBF4740F273AA613004E2E16 /* SlideOverCard */; };
 		EBF4744D273AC448004E2E16 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF47445273AC447004E2E16 /* AboutView.swift */; };
 		EBF4744E273AC448004E2E16 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4744C273AC448004E2E16 /* HelpView.swift */; };
 		EBF4744F273AC448004E2E16 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF47446273AC447004E2E16 /* ContentView.swift */; };
@@ -76,7 +75,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBF47410273AA613004E2E16 /* SlideOverCard in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +192,6 @@
 			);
 			name = Nitrogen;
 			packageProductDependencies = (
-				EBF4740F273AA613004E2E16 /* SlideOverCard */,
 			);
 			productName = "photos printed";
 			productReference = EB6DC783271981DA006B4A56 /* Nitrogen.app */;
@@ -289,7 +286,6 @@
 			);
 			mainGroup = EB6DC77A271981DA006B4A56;
 			packageReferences = (
-				EBF4740E273AA613004E2E16 /* XCRemoteSwiftPackageReference "swiftUI-slide-over-card" */,
 			);
 			productRefGroup = EB6DC784271981DA006B4A56 /* Products */;
 			projectDirPath = "";
@@ -790,14 +786,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		EBF4740E273AA613004E2E16 /* XCRemoteSwiftPackageReference "swiftUI-slide-over-card" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/moifort/swiftUI-slide-over-card";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
 		EBF47457273AC7D4004E2E16 /* XCRemoteSwiftPackageReference "swiftUI-slide-over-card" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/moifort/swiftUI-slide-over-card";
@@ -809,11 +797,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		EBF4740F273AA613004E2E16 /* SlideOverCard */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = EBF4740E273AA613004E2E16 /* XCRemoteSwiftPackageReference "swiftUI-slide-over-card" */;
-			productName = SlideOverCard;
-		};
 		EBF47456273AC7D4004E2E16 /* SlideOverCard */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EBF47457273AC7D4004E2E16 /* XCRemoteSwiftPackageReference "swiftUI-slide-over-card" */;

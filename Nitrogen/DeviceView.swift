@@ -29,21 +29,16 @@ struct FormView : View {
 struct DeviceView: View{
   var body: some View {
     Form {
-      Section(header: Text("Hardware Info")) {
+      Section(header: Text("Hardware Info"), footer: Text("Hardware refers to the physical components of your device.")) {
         FormView(label: "Device Identifier", symbol: "iphone", value: machineName())
-        FormView(label: "RAM", symbol: "memorychip.fill", value: "\(totalMem)")
+        FormView(label: "Model", symbol: "iphone", value: "\(modelName)")
+        FormView(label: "CPU", symbol: "memorychip.fill", value: "\(CPUinfoStr)")
+        FormView(label: "RAM (bytes)", symbol: "memorychip.fill", value: "\(totalMem)")
         FormView(label: "Processor Cores", symbol: "memorychip.fill", value: "\(totalCores)")
-        HStack {
-          Label("Device is simulator", systemImage: "laptopcomputer")
-          Spacer()
-          Text("\(String((isSimulator)))")
-            .multilineTextAlignment(.trailing)
-            .foregroundColor(.gray)
-            .font(.system(.body, design: .monospaced))
-        }
+        FormView(label: "Device is Simulator", symbol: "laptopcomputer", value: "\(isSimulator)")
       }
-      Section(header: Text("Software info")) {
-        FormView(label: "System Name", symbol: "iphone", value: sysName())
+      Section(header: Text("Software info"), footer: Text("Software refers to the programs and systems that run on your device.")) {
+        FormView(label: "System Name", symbol: "iphone.and.arrow.forward", value: sysName())
         FormView(label: "OS Version", symbol: "textformat.123", value: OSVer)
         FormView(label: "Uptime", symbol: "clock.fill", value: "\(uptime)")
         FormView(label: "Hostname", symbol: "network", value: hostName)
