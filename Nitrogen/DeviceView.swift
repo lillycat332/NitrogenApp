@@ -8,34 +8,31 @@
 import Foundation
 import SwiftUI
 
+// (label: String, symbol: String, value : Int)
+struct FormView : View {
+  @State var label: String = ""
+  @State var symbol: String = ""
+  @State var value: String = ""
+  var body: some View {
+    HStack {
+      Label(label, systemImage: symbol)
+      Spacer()
+      Text(value)
+        .multilineTextAlignment(.trailing)
+        .foregroundColor(.gray)
+        .font(.system(.body, design: .monospaced))
+    }
+  }
+}
+
+
 struct DeviceView: View{
   var body: some View {
     Form {
       Section(header: Text("Hardware Info")) {
-        HStack {
-          Label("Device identifier", systemImage: "iphone")
-          Spacer()
-          Text("\(machineName())")
-            .multilineTextAlignment(.trailing)
-            .foregroundColor(.gray)
-            .font(.system(.body, design: .monospaced))
-        }
-        HStack {
-          Label("RAM", systemImage: "memorychip.fill")
-          Spacer()
-          Text("\(totalMem) Bytes")
-            .multilineTextAlignment(.trailing)
-            .foregroundColor(.gray)
-            .font(.system(.body, design: .monospaced))
-        }
-        HStack {
-          Label("Processor Cores", systemImage: "memorychip.fill")
-          Spacer()
-          Text("\(totalCores)")
-            .multilineTextAlignment(.trailing)
-            .foregroundColor(.gray)
-            .font(.system(.body, design: .monospaced))
-        }
+        FormView(label: "Device Identifier", symbol: "iphone", value: machineName())
+        FormView(label: "RAM", symbol: "memorychip.fill", value: "\(totalMem)")
+        FormView(label: "Processor Cores", symbol: "memorychip.fill", value: "\(totalCores)")
         HStack {
           Label("Device is simulator", systemImage: "laptopcomputer")
           Spacer()
@@ -46,46 +43,20 @@ struct DeviceView: View{
         }
       }
       Section(header: Text("Software info")) {
-        HStack {
-          Label("System Name", systemImage: "iphone")
-          Spacer()
-          Text("\(sysName())")
-            .multilineTextAlignment(.trailing)
-            .foregroundColor(.gray)
-            .font(.system(.body, design: .monospaced))
-        }
-//        HStack {
-//          Label("Kernel Version", systemImage: "iphone")
-//          Spacer()
-//          Text("\(deviceVersion())")
-//            .multilineTextAlignment(.trailing)
-//            .foregroundColor(.gray)
-//            .font(.system(.body, design: .monospaced))
-//        }
-        HStack {
-          Label("OS Version", systemImage: "textformat.123")
-          Spacer()
-          Text("\(OSVer)")
-            .multilineTextAlignment(.trailing)
-            .foregroundColor(.gray)
-            .font(.system(.body, design: .monospaced))
-        }
-        HStack {
-          Label("Uptime", systemImage: "clock.fill")
-          Spacer()
-          Text("\(uptime)")
-            .multilineTextAlignment(.trailing)
-            .foregroundColor(.gray)
-            .font(.system(.body, design: .monospaced))
-        }
-        HStack {
-          Label("Hostname", systemImage: "network")
-          Spacer()
-          Text("\(hostName)")
-            .multilineTextAlignment(.trailing)
-            .foregroundColor(.gray)
-            .font(.system(.body, design: .monospaced))
-        }
+        FormView(label: "System Name", symbol: "iphone", value: sysName())
+        
+        //        HStack {
+        //          Label("Kernel Version", systemImage: "iphone")
+        //          Spacer()
+        //          Text("\(deviceVersion())")
+        //            .multilineTextAlignment(.trailing)
+        //            .foregroundColor(.gray)
+        //            .font(.system(.body, design: .monospaced))
+        //        }
+
+        FormView(label: "OS Version", symbol: "textformat.123", value: OSVer)
+        FormView(label: "Uptime", symbol: "clock.fill", value: "\(uptime)")
+        FormView(label: "Hostname", symbol: "network", value: hostName)
       }
     }
     .navigationTitle("Device")
