@@ -44,19 +44,10 @@ struct DeviceView: View{
       }
       Section(header: Text("Software info")) {
         FormView(label: "System Name", symbol: "iphone", value: sysName())
-        
-        //        HStack {
-        //          Label("Kernel Version", systemImage: "iphone")
-        //          Spacer()
-        //          Text("\(deviceVersion())")
-        //            .multilineTextAlignment(.trailing)
-        //            .foregroundColor(.gray)
-        //            .font(.system(.body, design: .monospaced))
-        //        }
-
         FormView(label: "OS Version", symbol: "textformat.123", value: OSVer)
         FormView(label: "Uptime", symbol: "clock.fill", value: "\(uptime)")
         FormView(label: "Hostname", symbol: "network", value: hostName)
+        // FormView(label: "Kernel Version", symbol: "iphone", value: "\(deviceVersion())")
       }
     }
     .navigationTitle("Device")
