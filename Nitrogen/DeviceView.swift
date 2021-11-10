@@ -42,7 +42,7 @@ struct DeviceView: View{
         FormView(label: "OS Version", symbol: "textformat.123", value: OSVer)
         FormView(label: "Uptime", symbol: "clock.fill", value: "\(uptime)")
         FormView(label: "Hostname", symbol: "network", value: hostName)
-        // FormView(label: "Kernel Version", symbol: "iphone", value: "\(deviceVersion())")
+        //FormView(label: "Kernel Version", symbol: "iphone", value: "\(deviceVersion())"
       }
     }
     .navigationTitle("Device")

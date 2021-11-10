@@ -40,7 +40,7 @@ struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
     if #available(iOS 15.0, *) {
       ContentView()
-        .previewInterfaceOrientation(.portraitUpsideDown)
+        .previewInterfaceOrientation(.landscapeRight)
     } else {
       // Fallback on earlier versions
     }
