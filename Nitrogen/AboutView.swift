@@ -14,7 +14,7 @@ struct AboutView: View{
           Label("View Licenses", systemImage: "doc.on.doc.fill")
         }
     }
-    .navigationTitle("About Nitrogen")
+    .navigationTitle("About")
   }
   
 }

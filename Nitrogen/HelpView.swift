@@ -13,7 +13,7 @@ struct HelpView: View{
     ScrollView {
       Text("Help")
     }
-    .navigationTitle("Nitrogen Help")
+    .navigationTitle("Help")
   }
   
 }
