@@ -17,3 +17,7 @@ Because 90% of the "spec apps" on the app store are fake, and the ones that aren
 # Why BSD? Why not [insert other license]?
 
 I used the BSD License because I believe GPL is not truly FOSS due to it's viral license, and BSD is much better in this regard.
+
+# Why is it called Nitrogen?
+
+I dunno, it sounds cool I guess? It's mainly in reference to the old Carbon framework though.
