@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-// (label: String, symbol: String, value : Int)
+// (label: String, symbol: String, value : String)
 struct FormView : View {
   @State var label: String = ""
   @State var symbol: String = ""
