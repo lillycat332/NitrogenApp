@@ -12,7 +12,7 @@
 		EB6DC798271981DC006B4A56 /* NitrogenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DC797271981DC006B4A56 /* NitrogenTests.swift */; };
 		EB6DC7A2271981DC006B4A56 /* NitrogenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DC7A1271981DC006B4A56 /* NitrogenUITests.swift */; };
 		EBF4744D273AC448004E2E16 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF47445273AC447004E2E16 /* AboutView.swift */; };
-		EBF4744E273AC448004E2E16 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4744C273AC448004E2E16 /* HelpView.swift */; };
+		EBF4744E273AC448004E2E16 /* HelpViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4744C273AC448004E2E16 /* HelpViews.swift */; };
 		EBF4744F273AC448004E2E16 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF47446273AC447004E2E16 /* ContentView.swift */; };
 		EBF47450273AC448004E2E16 /* BatteryTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF47448273AC448004E2E16 /* BatteryTestView.swift */; };
 		EBF47451273AC448004E2E16 /* NitrogenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF47447273AC447004E2E16 /* NitrogenApp.swift */; };
@@ -20,7 +20,7 @@
 		EBF47453273AC448004E2E16 /* HWInfoGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF47449273AC448004E2E16 /* HWInfoGetter.swift */; };
 		EBF47454273AC448004E2E16 /* LicenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4744A273AC448004E2E16 /* LicenseView.swift */; };
 		EBF47459273AC7D4004E2E16 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF47445273AC447004E2E16 /* AboutView.swift */; };
-		EBF4745A273AC7D4004E2E16 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4744C273AC448004E2E16 /* HelpView.swift */; };
+		EBF4745A273AC7D4004E2E16 /* HelpViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4744C273AC448004E2E16 /* HelpViews.swift */; };
 		EBF4745B273AC7D4004E2E16 /* LicenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4744A273AC448004E2E16 /* LicenseView.swift */; };
 		EBF4745C273AC7D4004E2E16 /* DeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4744B273AC448004E2E16 /* DeviceView.swift */; };
 		EBF4745D273AC7D4004E2E16 /* NitrogenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF47447273AC447004E2E16 /* NitrogenApp.swift */; };
@@ -64,7 +64,7 @@
 		EBF47449273AC448004E2E16 /* HWInfoGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWInfoGetter.swift; sourceTree = "<group>"; };
 		EBF4744A273AC448004E2E16 /* LicenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseView.swift; sourceTree = "<group>"; };
 		EBF4744B273AC448004E2E16 /* DeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceView.swift; sourceTree = "<group>"; };
-		EBF4744C273AC448004E2E16 /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
+		EBF4744C273AC448004E2E16 /* HelpViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViews.swift; sourceTree = "<group>"; };
 		EBF47469273AC7D4004E2E16 /* Nitrogen-iPad-test-thing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nitrogen-iPad-test-thing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF4746B273ACAEF004E2E16 /* Nitrogen-iPad-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Nitrogen-iPad-Info.plist"; sourceTree = "<group>"; };
 		EBF4746C273ACAF4004E2E16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 				EBF47446273AC447004E2E16 /* ContentView.swift */,
 				EBF4744B273AC448004E2E16 /* DeviceView.swift */,
 				EBF47448273AC448004E2E16 /* BatteryTestView.swift */,
-				EBF4744C273AC448004E2E16 /* HelpView.swift */,
+				EBF4744C273AC448004E2E16 /* HelpViews.swift */,
 				EBF47445273AC447004E2E16 /* AboutView.swift */,
 				EBF4744A273AC448004E2E16 /* LicenseView.swift */,
 				EBF47449273AC448004E2E16 /* HWInfoGetter.swift */,
@@ -340,7 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBF4744D273AC448004E2E16 /* AboutView.swift in Sources */,
-				EBF4744E273AC448004E2E16 /* HelpView.swift in Sources */,
+				EBF4744E273AC448004E2E16 /* HelpViews.swift in Sources */,
 				EBF47454273AC448004E2E16 /* LicenseView.swift in Sources */,
 				EBF47452273AC448004E2E16 /* DeviceView.swift in Sources */,
 				EBF47451273AC448004E2E16 /* NitrogenApp.swift in Sources */,
@@ -371,7 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBF47459273AC7D4004E2E16 /* AboutView.swift in Sources */,
-				EBF4745A273AC7D4004E2E16 /* HelpView.swift in Sources */,
+				EBF4745A273AC7D4004E2E16 /* HelpViews.swift in Sources */,
 				EBF4745B273AC7D4004E2E16 /* LicenseView.swift in Sources */,
 				EBF4745C273AC7D4004E2E16 /* DeviceView.swift in Sources */,
 				EBF4745D273AC7D4004E2E16 /* NitrogenApp.swift in Sources */,
@@ -528,7 +528,7 @@
 				INFOPLIST_FILE = Nitrogen/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationlandscapeRight UIInterfaceOrientationlandscapeLeft";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -559,7 +559,7 @@
 				INFOPLIST_FILE = Nitrogen/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationlandscapeRight UIInterfaceOrientationlandscapeLeft";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;

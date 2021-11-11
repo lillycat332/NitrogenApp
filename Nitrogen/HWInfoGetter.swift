@@ -70,6 +70,16 @@ var batteryIsCharging: String {
   }
 }
 
+var totalDiskBytes:Int64 {
+    guard let systemAttributes = try? FileManager.default.attributesOfFileSystem(forPath: NSHomeDirectory() as String),
+        let space = (systemAttributes[FileAttributeKey.systemSize] as? NSNumber)?.int64Value else { return 0 }
+    return space
+}
+
+var totalDiskGB:String {
+   return ByteCountFormatter.string(fromByteCount: totalDiskBytes, countStyle: ByteCountFormatter.CountStyle.decimal)
+}
+
 var totalMem: Float {
   return Float(ProcessInfo.processInfo.physicalMemory) / 1024.0 / 1024.0 / 1024.0
 }
@@ -86,8 +96,8 @@ var hostName : String {
   return ProcessInfo.processInfo.hostName
 }
 
-var uptime : TimeInterval {
-  return ProcessInfo.processInfo.systemUptime
+var uptimeParsed : String {
+  return parseSeconds(seconds: Int(ProcessInfo.processInfo.systemUptime))
 }
 
 var isSimulator: Bool {
@@ -96,6 +106,10 @@ var isSimulator: Bool {
 
 var modelName: String {
   return UIDevice.modelName
+}
+
+func parseSeconds (seconds : Int) -> (String) {
+  return ("\(seconds / 86400)D, \(seconds / 3600)H, \((seconds % 3600) / 60)M, \((seconds % 3600) % 60)S")
 }
 
 // I found this on SO: https://stackoverflow.com/a/65288195/
