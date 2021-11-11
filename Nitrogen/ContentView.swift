@@ -21,9 +21,9 @@ struct ContentView: View {
         }
         
         Section(header: Text("Information")) {
-          NavigationLink(destination: HelpView()) {
-            Label("Help", systemImage: "questionmark.circle.fill")
-          }
+//          NavigationLink(destination: HelpView()) {
+//            Label("Help", systemImage: "questionmark.circle.fill")
+//          }
           NavigationLink(destination: AboutView()) {
             Label("About Nitrogen", systemImage: "command")
           }
