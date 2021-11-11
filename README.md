@@ -9,10 +9,6 @@ Currently, it can show battery level and charge state, OS and Kernel version+inf
   <img src="https://user-images.githubusercontent.com/54189319/141285732-48f9ccd9-fee3-49e2-aa6f-7c6f41a1c71a.png" width="400">
   <img src="https://user-images.githubusercontent.com/54189319/141285830-36cc958b-74aa-44d4-a007-fba3d3f2f117.png" width="400">
 </p>
-<p float="left">
-  <img src="https://user-images.githubusercontent.com/54189319/141137500-80e53572-0c8b-4817-80f9-bdc1e20c3799.png" width="200">
-  <img src="https://user-images.githubusercontent.com/54189319/141137505-8c068b16-8230-42ff-8b8c-be6d8276ec3f.png" width="200">
-</p>
 
 # Why?
 
