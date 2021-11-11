@@ -1,12 +1,35 @@
-# NitrogenApp
+# N<sub>2</sub> Nitrogen 
 
-Nitrogen is a BSD Licensed tool for viewing iOS system info. It is written in Swift with SwiftUI, and minimizes use of libraries where possible.
-Currently, it can show battery level and state, OS information, device name + some specs and hostname.
+## What is it?
+
+Nitrogen is a tool for viewing iOS system info. It is written in Swift with SwiftUI, and minimizes use of libraries where possible.
+Currently, it can show battery level and charge state, OS and Kernel version+information, device name + device specs.
+
 <p float="left">
-  <img src="https://user-images.githubusercontent.com/54189319/141138615-42b648b7-2b59-453f-8374-fab6a357a8b0.png" width="400">
-  <img src="https://user-images.githubusercontent.com/54189319/141137444-0d36a5d2-ef7f-455e-8aa7-78dc11014e03.png" width="400">
+  <img src="https://user-images.githubusercontent.com/54189319/141285732-48f9ccd9-fee3-49e2-aa6f-7c6f41a1c71a.png" width="400">
+  <img src="https://user-images.githubusercontent.com/54189319/141285830-36cc958b-74aa-44d4-a007-fba3d3f2f117.png" width="400">
 </p>
-<p float="left">
-  <img src="https://user-images.githubusercontent.com/54189319/141137500-80e53572-0c8b-4817-80f9-bdc1e20c3799.png" width="200">
-  <img src="https://user-images.githubusercontent.com/54189319/141137505-8c068b16-8230-42ff-8b8c-be6d8276ec3f.png" width="200">
-</p>
+
+## Why?
+
+Because 90% of the "spec apps" on the app store are fake (ie. weird battery health apps), and the ones that aren't don't fit my needs and aren't visually appealing. Apps should fit the platform they are on, and Nitrogen aims to do this by using entirely native Swift code and SwiftUI. Also because learning by doing is way more interesting than tutorial hell.
+
+## Why BSD? Why not [insert other license]?
+
+I used the BSD License because I believe GPL kinda sucks due to it's viral license, and BSD is much better in my opinion. If you would like to steal my code and sell it in a commercial product, have fun. It's trash anyway.
+
+## Why is it called Nitrogen?
+
+I dunno, it sounds cool I guess? It's mainly in reference to the old Carbon framework though.
+
+## Will it run on my device?
+
+Probably. It's very lightweight since it does very little computing (it mainly just calls UIDevice and ProcessInfo) but requires iOS/iPadOS 14.0 because of SwiftUI, so if you've got anything iOS 14 or above you're good! In future, the target OS may increase. I am not very experienced with UIKit, and don't really want to use a backport as my way of learning it. If you know UIKit and would like to port it, go ahead.
+
+## How do I install it/Compile it?
+
+Install Xcode. Clone the project into Xcode. Set up the config and your signing certificate/provisioning profile. Set the active scheme to ```NitrogenRelease```. Build for any iOS device, arm64. Install it to your device. 
+
+## Is it on the App Store?
+
+No, it isn't on the App Store because I don't have 100 dollars lying around. If you have 100 dollars and would like to give them to me, you're more than welcome.
