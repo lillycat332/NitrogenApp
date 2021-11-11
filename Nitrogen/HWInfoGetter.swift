@@ -8,6 +8,22 @@
 import Foundation
 import UIKit.UIDevice
 
+// Functions
+
+func parseSeconds (seconds : Int) -> (String) {
+  return ("\(seconds / 86400)D, \(seconds / 3600)H, \((seconds % 3600) / 60)M, \((seconds % 3600) % 60)S")
+}
+
+// Hardware getters
+
+var isSimulator: Bool {
+  return TARGET_OS_SIMULATOR != 0
+}
+
+var modelName: String {
+  return UIDevice.modelName
+}
+
 func machineName() -> String {
   var systemInfo = utsname()
   uname(&systemInfo)
@@ -15,58 +31,6 @@ func machineName() -> String {
   return machineMirror.children.reduce("") { identifier, element in
     guard let value = element.value as? Int8, value != 0 else { return identifier }
     return identifier + String(UnicodeScalar(UInt8(value)))
-  }
-}
-
-func sysName() -> String {
-  var systemInfo = utsname()
-  uname(&systemInfo)
-  let machineMirror = Mirror(reflecting: systemInfo.sysname)
-  return machineMirror.children.reduce("") { identifier, element in
-    guard let value = element.value as? Int8, value != 0 else { return identifier }
-    return identifier + String(UnicodeScalar(UInt8(value)))
-  }
-}
-
-func deviceVersion() -> String {
-  var systemInfo = utsname()
-  uname(&systemInfo)
-  let machineMirror = Mirror(reflecting: systemInfo.version)
-  return machineMirror.children.reduce("") { identifier, element in
-    guard let value = element.value as? Int8, value != 0 else { return identifier }
-    return identifier + String(UnicodeScalar(UInt8(value)))
-  }
-}
-
-func kernelVersion() -> String {
-  var systemInfo = utsname()
-  uname(&systemInfo)
-  let machineMirror = Mirror(reflecting: systemInfo.release)
-  return machineMirror.children.reduce("") { identifier, element in
-    guard let value = element.value as? Int8, value != 0 else { return identifier }
-    return identifier + String(UnicodeScalar(UInt8(value)))
-  }
-}
-
-var batteryPercent: Float {
-  UIDevice.current.isBatteryMonitoringEnabled = true
-  return (UIDevice.current.batteryLevel * 100)
-}
-
-var batteryIsCharging: String {
-  UIDevice.current.isBatteryMonitoringEnabled = true
-  var batteryState: UIDevice.BatteryState { UIDevice.current.batteryState }
-  switch batteryState {
-  case .unplugged:
-    return "Not Charging"
-  case .unknown:
-    return "Unknown"
-  case .charging:
-    return "Charging"
-  case .full:
-    return "Full"
-  @unknown default:
-    return "Unknown"
   }
 }
 
@@ -88,29 +52,7 @@ var totalCores: Int {
   return ProcessInfo.processInfo.processorCount
 }
 
-var OSVer : String {
-  return UIDevice.current.systemVersion
-}
-
-var hostName : String {
-  return ProcessInfo.processInfo.hostName
-}
-
-var uptimeParsed : String {
-  return parseSeconds(seconds: Int(ProcessInfo.processInfo.systemUptime))
-}
-
-var isSimulator: Bool {
-  return TARGET_OS_SIMULATOR != 0
-}
-
-var modelName: String {
-  return UIDevice.modelName
-}
-
-func parseSeconds (seconds : Int) -> (String) {
-  return ("\(seconds / 86400)D, \(seconds / 3600)H, \((seconds % 3600) / 60)M, \((seconds % 3600) % 60)S")
-}
+// CPU Info stuff
 
 // I found this on SO: https://stackoverflow.com/a/65288195/
 // Making this lookup table would have been a huge PitA, so thanks to the guy that did it.
@@ -295,4 +237,72 @@ public extension UIDevice {
     return mapToDevice(identifier: identifier)
   }()
   
+}
+
+// Software Getters
+
+func sysName() -> String {
+  var systemInfo = utsname()
+  uname(&systemInfo)
+  let machineMirror = Mirror(reflecting: systemInfo.sysname)
+  return machineMirror.children.reduce("") { identifier, element in
+    guard let value = element.value as? Int8, value != 0 else { return identifier }
+    return identifier + String(UnicodeScalar(UInt8(value)))
+  }
+}
+
+func deviceVersion() -> String {
+  var systemInfo = utsname()
+  uname(&systemInfo)
+  let machineMirror = Mirror(reflecting: systemInfo.version)
+  return machineMirror.children.reduce("") { identifier, element in
+    guard let value = element.value as? Int8, value != 0 else { return identifier }
+    return identifier + String(UnicodeScalar(UInt8(value)))
+  }
+}
+
+func kernelVersion() -> String {
+  var systemInfo = utsname()
+  uname(&systemInfo)
+  let machineMirror = Mirror(reflecting: systemInfo.release)
+  return machineMirror.children.reduce("") { identifier, element in
+    guard let value = element.value as? Int8, value != 0 else { return identifier }
+    return identifier + String(UnicodeScalar(UInt8(value)))
+  }
+}
+
+var OSVer : String {
+  return UIDevice.current.systemVersion
+}
+
+var hostName : String {
+  return ProcessInfo.processInfo.hostName
+}
+
+var uptimeParsed : String {
+  return parseSeconds(seconds: Int(ProcessInfo.processInfo.systemUptime))
+}
+
+// Battery Info
+
+var batteryPercent: Float {
+  UIDevice.current.isBatteryMonitoringEnabled = true
+  return (UIDevice.current.batteryLevel * 100)
+}
+
+var batteryIsCharging: String {
+  UIDevice.current.isBatteryMonitoringEnabled = true
+  var batteryState: UIDevice.BatteryState { UIDevice.current.batteryState }
+  switch batteryState {
+  case .unplugged:
+    return "Not Charging"
+  case .unknown:
+    return "Unknown"
+  case .charging:
+    return "Charging"
+  case .full:
+    return "Full"
+  @unknown default:
+    return "Unknown"
+  }
 }
