@@ -12,7 +12,7 @@ Currently, it can show battery level and charge state, OS and Kernel version+inf
 
 ## Why?
 
-Because 90% of the "spec apps" on the app store are fake, and the ones that aren't don't fit my needs and aren't visually appealing. Apps should fit the platform they are on, and Nitrogen aims to do this by using entirely native Swift code and SwiftUI. Also because learning by doing is way more interesting than tutorial hell.
+Because 90% of the "spec apps" on the app store are fake (ie. weird battery health apps), and the ones that aren't don't fit my needs and aren't visually appealing. Apps should fit the platform they are on, and Nitrogen aims to do this by using entirely native Swift code and SwiftUI. Also because learning by doing is way more interesting than tutorial hell.
 
 ## Why BSD? Why not [insert other license]?
 
