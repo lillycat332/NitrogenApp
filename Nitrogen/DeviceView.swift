@@ -8,7 +8,6 @@
 import Foundation
 import SwiftUI
 
-// (label: String, symbol: String, value : String)
 struct FormView : View {
   @State var label: String = ""
   @State var symbol: String = ""
@@ -35,6 +34,7 @@ struct DeviceView: View {
         FormView(label: "Storage Size", symbol: "internaldrive.fill", value: "\(totalDiskGB)")
         FormView(label: "Device is Simulator", symbol: "laptopcomputer", value: "\(isSimulator)")
       }
+      
       Section(header: Text("Software info"), footer: Text("Software refers to the programs and systems that run on your device.")) {
         FormView(label: "OS", symbol: "folder.fill.badge.gearshape", value: "\(OSVer)")
         FormView(label: "Kernel", symbol: "hammer.fill", value: "\(sysName()) \(kernelVersion())")
