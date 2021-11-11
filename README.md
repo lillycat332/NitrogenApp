@@ -1,4 +1,4 @@
-# NitrogenApp
+# N<sub>2</sub> Nitrogen 
 
 # What is it?
 
