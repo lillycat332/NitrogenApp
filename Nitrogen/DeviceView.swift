@@ -25,28 +25,22 @@ struct FormView : View {
   }
 }
 
-
-struct DeviceView: View{
+struct DeviceView: View {
   var body: some View {
     Form {
       Section(header: Text("Hardware Info"), footer: Text("Hardware refers to the physical components of your device.")) {
-        FormView(label: "Device Identifier", symbol: "iphone", value: machineName())
-        FormView(label: "Model", symbol: "iphone", value: "\(modelName)")
-        FormView(label: "SoC", symbol: "memorychip.fill", value: "\(CPUinfoStr)")
+        FormView(label: "Model", symbol: "iphone", value: "\(modelName) (\(machineName()))")
+        FormView(label: "SoC", symbol: "cpu", value: "\(totalCores) Core \(CPUinfoStr)")
         FormView(label: "RAM (GiB)", symbol: "memorychip.fill", value: "\(totalMem)")
-        FormView(label: "Processor Cores", symbol: "memorychip.fill", value: "\(totalCores)")
         FormView(label: "Device is Simulator", symbol: "laptopcomputer", value: "\(isSimulator)")
       }
       Section(header: Text("Software info"), footer: Text("Software refers to the programs and systems that run on your device.")) {
-        FormView(label: "System Name", symbol: "iphone.and.arrow.forward", value: sysName())
-        FormView(label: "OS Version", symbol: "textformat.123", value: OSVer)
+        FormView(label: "OS", symbol: "textformat.123", value: "\(OSVer)")
+        FormView(label: "Kernel", symbol: "externaldrive.fill", value: "\(sysName()) \(kernelVersion())")
         FormView(label: "Uptime", symbol: "clock.fill", value: "\(uptime)")
         FormView(label: "Hostname", symbol: "network", value: hostName)
-        //FormView(label: "Kernel Version", symbol: "iphone", value: "\(deviceVersion())"
       }
     }
     .navigationTitle("Device")
   }
 }
-
-

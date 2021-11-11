@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct HelpView: View{
+struct HelpView: View {
   var body: some View {
     ScrollView {
       Text("Help")

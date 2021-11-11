@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AboutView: View{
+struct AboutView: View {
   var body: some View {
     List {
       NavigationLink(destination: LicenseView()) {

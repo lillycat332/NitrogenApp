@@ -38,10 +38,10 @@ func deviceVersion() -> String {
   }
 }
 
-func sysInfo() -> String {
+func kernelVersion() -> String {
   var systemInfo = utsname()
   uname(&systemInfo)
-  let machineMirror = Mirror(reflecting: systemInfo)
+  let machineMirror = Mirror(reflecting: systemInfo.release)
   return machineMirror.children.reduce("") { identifier, element in
     guard let value = element.value as? Int8, value != 0 else { return identifier }
     return identifier + String(UnicodeScalar(UInt8(value)))
@@ -182,7 +182,7 @@ func CPUinfo() -> Dictionary<String, String> {
   }
 }
 
-var CPUinfoStr : String = CPUinfo().map { $0.0 + ", " + $0.1 }.joined(separator: " ")
+var CPUinfoStr : String = CPUinfo().map { $0.0 + " @ " + $0.1 }.joined(separator: " ")
 
 // The same for this, which was taken from here https://stackoverflow.com/a/26962452/
 
