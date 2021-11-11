@@ -2,7 +2,7 @@
 
 # What is it?
 
-Nitrogen is a tool for viewing iOS system info. It is written in Swift with SwiftUI, and minimizes use of libr aries where possible.
+Nitrogen is a tool for viewing iOS system info. It is written in Swift with SwiftUI, and minimizes use of libraries where possible.
 Currently, it can show battery level and charge state, OS and Kernel version+information, device name + device specs.
 
 <p float="left">
