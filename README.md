@@ -16,6 +16,8 @@ Currently, it can show battery level and charge state, OS and Kernel version+inf
 
 # Why?
 
-Because 90% of the "spec apps" on the app store are fake, and the ones that aren't suck or aren't visually appealing. Apps should fit the platform they are on, and Nitrogen aims to do this by using entirely SwiftUI. I used the BSD License because I believe GPL is not truly FOSS, and BSD is much better in this regard, providing forks and projects borrowing code to pick a different license as BSD is not viral like GPL.
+Because 90% of the "spec apps" on the app store are fake, and the ones that aren't don't fit my needs and aren't visually appealing. Apps should fit the platform they are on, and Nitrogen aims to do this by using entirely native Swift code and SwiftUI.
 
-# 
+# Why BSD? Why not [insert other license]?
+
+I used the BSD License because I believe GPL is not truly FOSS due to it's viral license, and BSD is much better in this regard.
