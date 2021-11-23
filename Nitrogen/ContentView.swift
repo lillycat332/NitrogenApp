@@ -12,7 +12,7 @@ struct ContentView: View {
     NavigationView {
       List {
         Section(header: Text("About this Device")) {
-          NavigationLink(destination: DeviceView()) {
+          NavigationLink(destination: dv()) {
             Label("Device", systemImage: "ipad")
           }
           NavigationLink(destination: BatteryTestView()) {

@@ -11,6 +11,7 @@
 		EB6DC78E271981DC006B4A56 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB6DC78D271981DC006B4A56 /* Preview Assets.xcassets */; };
 		EB6DC798271981DC006B4A56 /* NitrogenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DC797271981DC006B4A56 /* NitrogenTests.swift */; };
 		EB6DC7A2271981DC006B4A56 /* NitrogenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DC7A1271981DC006B4A56 /* NitrogenUITests.swift */; };
+		EB7B7D29274D83F000E63999 /* sneedview.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7B7D28274D83F000E63999 /* sneedview.swift */; };
 		EBF4744D273AC448004E2E16 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF47445273AC447004E2E16 /* AboutView.swift */; };
 		EBF4744E273AC448004E2E16 /* HelpViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4744C273AC448004E2E16 /* HelpViews.swift */; };
 		EBF4744F273AC448004E2E16 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF47446273AC447004E2E16 /* ContentView.swift */; };
@@ -57,6 +58,7 @@
 		EB6DC797271981DC006B4A56 /* NitrogenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NitrogenTests.swift; sourceTree = "<group>"; };
 		EB6DC79D271981DC006B4A56 /* NitrogenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NitrogenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB6DC7A1271981DC006B4A56 /* NitrogenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NitrogenUITests.swift; sourceTree = "<group>"; };
+		EB7B7D28274D83F000E63999 /* sneedview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = sneedview.swift; path = ../../../../Downloads/sneedview.swift; sourceTree = "<group>"; };
 		EBF47445273AC447004E2E16 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		EBF47446273AC447004E2E16 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EBF47447273AC447004E2E16 /* NitrogenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NitrogenApp.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				EBF47447273AC447004E2E16 /* NitrogenApp.swift */,
 				EBF47446273AC447004E2E16 /* ContentView.swift */,
 				EBF4744B273AC448004E2E16 /* DeviceView.swift */,
+				EB7B7D28274D83F000E63999 /* sneedview.swift */,
 				EBF47448273AC448004E2E16 /* BatteryTestView.swift */,
 				EBF4744C273AC448004E2E16 /* HelpViews.swift */,
 				EBF47445273AC447004E2E16 /* AboutView.swift */,
@@ -341,6 +344,7 @@
 			files = (
 				EBF4744D273AC448004E2E16 /* AboutView.swift in Sources */,
 				EBF4744E273AC448004E2E16 /* HelpViews.swift in Sources */,
+				EB7B7D29274D83F000E63999 /* sneedview.swift in Sources */,
 				EBF47454273AC448004E2E16 /* LicenseView.swift in Sources */,
 				EBF47452273AC448004E2E16 /* DeviceView.swift in Sources */,
 				EBF47451273AC448004E2E16 /* NitrogenApp.swift in Sources */,
