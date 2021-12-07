@@ -33,3 +33,7 @@ Install Xcode. Clone the project into Xcode. Set up the config and your signing 
 ## Is it on the App Store?
 
 No, it isn't on the App Store because I don't have 100 dollars lying around. If you have 100 dollars and would like to give them to me, you're more than welcome.
+
+![notontheappstore](https://user-images.githubusercontent.com/54189319/145082391-c4fe0dbd-bb45-4212-a1a7-7c6bab1006fc.png)
+
+
