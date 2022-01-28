@@ -11,7 +11,6 @@
 		EB6DC78E271981DC006B4A56 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB6DC78D271981DC006B4A56 /* Preview Assets.xcassets */; };
 		EB6DC798271981DC006B4A56 /* NitrogenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DC797271981DC006B4A56 /* NitrogenTests.swift */; };
 		EB6DC7A2271981DC006B4A56 /* NitrogenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DC7A1271981DC006B4A56 /* NitrogenUITests.swift */; };
-		EB7B7D29274D83F000E63999 /* sneedview.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7B7D28274D83F000E63999 /* sneedview.swift */; };
 		EBF4744D273AC448004E2E16 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF47445273AC447004E2E16 /* AboutView.swift */; };
 		EBF4744E273AC448004E2E16 /* HelpViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF4744C273AC448004E2E16 /* HelpViews.swift */; };
 		EBF4744F273AC448004E2E16 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF47446273AC447004E2E16 /* ContentView.swift */; };
@@ -50,6 +49,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		EB8FF9C42788DAA30041FDD1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		EB6DC783271981DA006B4A56 /* Nitrogen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nitrogen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB6DC78A271981DB006B4A56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,7 +70,6 @@
 		EB6DC797271981DC006B4A56 /* NitrogenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NitrogenTests.swift; sourceTree = "<group>"; };
 		EB6DC79D271981DC006B4A56 /* NitrogenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NitrogenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB6DC7A1271981DC006B4A56 /* NitrogenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NitrogenUITests.swift; sourceTree = "<group>"; };
-		EB7B7D28274D83F000E63999 /* sneedview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = sneedview.swift; path = ../../../../Downloads/sneedview.swift; sourceTree = "<group>"; };
 		EBF47445273AC447004E2E16 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		EBF47446273AC447004E2E16 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EBF47447273AC447004E2E16 /* NitrogenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NitrogenApp.swift; sourceTree = "<group>"; };
@@ -105,6 +116,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB4C86F7274FA7D500CA4F79 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EBF47446273AC447004E2E16 /* ContentView.swift */,
+				EBF4744B273AC448004E2E16 /* DeviceView.swift */,
+				EBF47448273AC448004E2E16 /* BatteryTestView.swift */,
+				EBF4744C273AC448004E2E16 /* HelpViews.swift */,
+				EBF47445273AC447004E2E16 /* AboutView.swift */,
+				EBF4744A273AC448004E2E16 /* LicenseView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		EB6DC77A271981DA006B4A56 = {
 			isa = PBXGroup;
 			children = (
@@ -131,16 +155,10 @@
 		EB6DC785271981DA006B4A56 /* Nitrogen */ = {
 			isa = PBXGroup;
 			children = (
-				EBF4746C273ACAF4004E2E16 /* Info.plist */,
+				EB4C86F7274FA7D500CA4F79 /* Views */,
 				EBF47447273AC447004E2E16 /* NitrogenApp.swift */,
-				EBF47446273AC447004E2E16 /* ContentView.swift */,
-				EBF4744B273AC448004E2E16 /* DeviceView.swift */,
-				EB7B7D28274D83F000E63999 /* sneedview.swift */,
-				EBF47448273AC448004E2E16 /* BatteryTestView.swift */,
-				EBF4744C273AC448004E2E16 /* HelpViews.swift */,
-				EBF47445273AC447004E2E16 /* AboutView.swift */,
-				EBF4744A273AC448004E2E16 /* LicenseView.swift */,
 				EBF47449273AC448004E2E16 /* HWInfoGetter.swift */,
+				EBF4746C273ACAF4004E2E16 /* Info.plist */,
 				EB6DC78A271981DB006B4A56 /* Assets.xcassets */,
 				EB6DC78C271981DC006B4A56 /* Preview Content */,
 			);
@@ -188,6 +206,7 @@
 				EB6DC77F271981DA006B4A56 /* Sources */,
 				EB6DC780271981DA006B4A56 /* Frameworks */,
 				EB6DC781271981DA006B4A56 /* Resources */,
+				EB8FF9C42788DAA30041FDD1 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -263,7 +282,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1300;
+				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
 					EB6DC782271981DA006B4A56 = {
@@ -344,7 +363,6 @@
 			files = (
 				EBF4744D273AC448004E2E16 /* AboutView.swift in Sources */,
 				EBF4744E273AC448004E2E16 /* HelpViews.swift in Sources */,
-				EB7B7D29274D83F000E63999 /* sneedview.swift in Sources */,
 				EBF47454273AC448004E2E16 /* LicenseView.swift in Sources */,
 				EBF47452273AC448004E2E16 /* DeviceView.swift in Sources */,
 				EBF47451273AC448004E2E16 /* NitrogenApp.swift in Sources */,
