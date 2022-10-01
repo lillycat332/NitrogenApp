@@ -15,8 +15,8 @@ struct BatteryTestView: View {
     VStack {
       List {
         Section(header: Text("Battery Info"), footer: Text("To access battery health, look in settings or a program like coconutBattery.")) {
-          FormView(label: "Battery Level", symbol: "battery.100", value: "\(batteryPercent)%")
-          FormView(label: "Battery State", symbol: "battery.100.bolt", value: "\(batteryIsCharging)")
+          InfoItem(label: "Battery Level", symbol: "battery.100", description: "\(batteryPercent)%")
+          InfoItem(label: "Battery State", symbol: "battery.100.bolt", description: "\(batteryIsCharging)")
         }
       }
     }

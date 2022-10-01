@@ -8,16 +8,16 @@
 import Foundation
 import SwiftUI
 
-struct DeviceDataView : View {
-  // parses the variables into hstack for form
+struct InfoItem : View {
+  /// InfoItem displays label, symbol and description as a HStack containing a Label(label), a Spacer(), and Text(description), to be used eg. inside a Form { ... }
   @State var label: String = ""
   @State var symbol: String = ""
-  @State var value: String = ""
+  @State var description: String = ""
   var body: some View {
     HStack {
       Label(label, systemImage: symbol)
       Spacer()
-      Text(value)
+      Text(description)
         .multilineTextAlignment(.trailing)
         .foregroundColor(.gray)
         .font(.system(.body, design: .monospaced))
@@ -29,21 +29,27 @@ struct DeviceView: View {
   // main view
   var body: some View {
     Form {
-      Section(header: Text("Hardware Info"), footer: Text("Hardware refers to the physical components of your device.")) {
-        DeviceDataView(label: "Model", symbol: "ipad.and.iphone", value: "\(modelName) (\(machineName()))")
-        DeviceDataView(label: "SoC", symbol: "cpu.fill", value: "\(totalCores) Core \(CPUinfoStr)")
-        DeviceDataView(label: "RAM", symbol: "memorychip.fill", value: "\(totalMem) GiB")
-        DeviceDataView(label: "Storage Size", symbol: "internaldrive.fill", value: "\(totalDiskGB)")
-        DeviceDataView(label: "Device is Simulator", symbol: "laptopcomputer", value: "\(isSimulator)")
+      Section(header: Text("Hardware Info"), footer: Text(hwMessage)) {
+        InfoItem(label: "Model", symbol: "ipad.and.iphone", description: "\(modelName) (\(machineName()))")
+        InfoItem(label: "SoC", symbol: "cpu.fill", description: "\(totalCores) Core \(CPUinfoStr)")
+        InfoItem(label: "RAM", symbol: "memorychip.fill", description: "\(totalMem) GiB")
+        InfoItem(label: "Storage Size", symbol: "internaldrive.fill", description: "\(totalDiskGB)")
+        InfoItem(label: "Device is Simulator", symbol: "laptopcomputer", description: "\(isSimulator)")
       }
       
-      Section(header: Text("Software info"), footer: Text("Software refers to the programs and systems that run on your device.")) {
-        DeviceDataView(label: "OS", symbol: "folder.fill.badge.gearshape", value: "\(OSVer)")
-        DeviceDataView(label: "Kernel", symbol: "hammer.fill", value: "\(sysName()) \(kernelVersion())")
-        DeviceDataView(label: "Uptime", symbol: "clock.fill", value: "\(uptimeParsed)")
-        DeviceDataView(label: "Hostname", symbol: "network", value: hostName)
+      Section(header: Text("Software info"), footer: Text(swMessage)) {
+        InfoItem(label: "OS", symbol: "folder.fill.badge.gearshape", description: "\(OSVer)")
+        InfoItem(label: "Kernel", symbol: "hammer.fill", description: "\(sysName()) \(kernelVersion())")
+        InfoItem(label: "Uptime", symbol: "clock.fill", description: "\(uptimeParsed)")
+        InfoItem(label: "Hostname", symbol: "network", description: hostName)
       }
     }
     .navigationTitle("Device")
+  }
+}
+
+struct DeviceView_Previews: PreviewProvider {
+  static var previews: some View {
+    DeviceView()
   }
 }

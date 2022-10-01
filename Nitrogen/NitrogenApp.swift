@@ -16,3 +16,5 @@ struct NitrogenApp: App {
   }
 }
 
+let hwMessage = "Hardware refers to the physical parts of your device."
+let swMessage = "Software refers to the things that run on your device."

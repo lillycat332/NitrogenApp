@@ -19,16 +19,13 @@ struct ContentView: View {
             Label("Battery", systemImage: "battery.75")
           }
         }
-        
+
         Section(header: Text("Information")) {
-//          NavigationLink(destination: HelpView()) {
-//            Label("Help", systemImage: "questionmark.circle.fill")
-//          }
           NavigationLink(destination: AboutView()) {
             Label("About Nitrogen", systemImage: "command")
           }
         }
-        
+
       }
       .navigationTitle(Text("Nitrogen"))
       DeviceView()
@@ -38,12 +35,13 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    if #available(iOS 15.0, *) {
-      ContentView()
-        .previewInterfaceOrientation(.landscapeRight)
-    } else {
-      // Fallback on earlier versions
-    }
+//    ContentView()
+//      .previewDevice(PreviewDevice(rawValue: "iPhone 12"))
+//      .previewDisplayName("iPhone 12")
+    
+    ContentView()
+      .previewDevice(PreviewDevice(rawValue: "iPad Air (5th generation)"))
+      .previewDisplayName("iPad Air 5")
   }
 }
 
