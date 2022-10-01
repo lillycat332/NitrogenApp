@@ -1,0 +1,4 @@
+language: swift
+xcode_project: Nitrogen.xcodeproj # path to your xcodeproj folder
+xcode_scheme: NitrogenRelease
+xcode_destination: platform=iOS Simulator,OS=15.0,name=iPad Air (4th Generation)

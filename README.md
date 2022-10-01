@@ -2,7 +2,7 @@
 
 ## What is it?
 
-Nitrogen is a tool for viewing iOS system info. It is written in Swift with SwiftUI, and minimizes use of libraries where possible.
+Nitrogen is a tool for viewing iOS system info. It is written in Swift with SwiftUI, and minimizes use of third-party libraries where possible.
 Currently, it can show battery level and charge state, OS and Kernel version+information, device name + device specs.
 
 <p float="left">
@@ -12,11 +12,11 @@ Currently, it can show battery level and charge state, OS and Kernel version+inf
 
 ## Why?
 
-Because 90% of the "spec apps" on the app store are fake (ie. weird battery health apps), and the ones that aren't don't fit my needs and aren't visually appealing. Apps should fit the platform they are on, and Nitrogen aims to do this by using entirely native Swift code and SwiftUI. Also because learning by doing is way more interesting than tutorial hell.
+Because 90% of the "spec apps" on the app store are fake (ie. weird battery health apps), and the ones that aren't don't fit my needs and aren't visually appealing. Apps should fit the platform they are on, and Nitrogen aims to do this by using entirely native Swift and SwiftUI.z
 
 ## Why BSD? Why not [insert other license]?
 
-I used the BSD License because I believe GPL kinda sucks due to it's viral license, and BSD is much better in my opinion. If you would like to steal my code and sell it in a commercial product, have fun. It's trash anyway.
+I used the BSD License because I think GPL isn't great due to it's viral license. BSD, ISC, public domain &c are much better in my opinion. If you would like to steal my code and sell it in a commercial product, have fun. It's trash anyway.
 
 ## Why is it called Nitrogen?
 
@@ -33,3 +33,7 @@ Install Xcode. Clone the project into Xcode. Set up the config and your signing 
 ## Is it on the App Store?
 
 No, it isn't on the App Store because I don't have 100 dollars lying around. If you have 100 dollars and would like to give them to me, you're more than welcome.
+
+![notontheappstore](https://user-images.githubusercontent.com/54189319/145082391-c4fe0dbd-bb45-4212-a1a7-7c6bab1006fc.png)
+
+
